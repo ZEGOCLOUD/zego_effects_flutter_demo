@@ -1,0 +1,6 @@
+framework module ZegoEffects {
+  umbrella header "ZegoEffects.h"
+
+  export *
+  module * { export * }
+}

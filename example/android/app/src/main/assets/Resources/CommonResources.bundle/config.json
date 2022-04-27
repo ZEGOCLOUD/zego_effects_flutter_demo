@@ -1,0 +1,52 @@
+{
+    "version": "1.5.0",
+    "filter": 1001, 
+    "type": "effect_config",
+    "items": [
+        {
+            "type": "sharpen",
+            "default": {
+                "range": [
+                    0,
+                    30
+                ]
+            }
+        },
+        {
+            "type": "bright_eye",
+            "default": {
+                "range": [
+                    0,
+                    100
+                ]
+            },
+            "windows": {
+                "range": [
+                    0,
+                    50
+                ]
+            }
+        },
+        {
+            "type": "beauty_face",
+            "default": {
+                "range": [
+                    0,
+                    70
+                ]
+            },
+            "ios": {
+                "range": [
+                    0,
+                    70
+                ]
+            },
+            "android": {
+                "range": [
+                    0,
+                    70
+                ]
+            }
+        }
+    ]
+}
