@@ -9,19 +9,16 @@ The AI Effects Flutter SDK provided by ZEGO is a Flutter Plugin Wrapper that is 
 ## 2️⃣ Set up the development environment
 
 - Android Studio: Select the **Preferences** > **Plugins**, and search the `Flutter` plugin and install it, and add the Flutter SDK path downloaded in the previous step.
+
 - VS Code: Search the `Flutter` extension in the application store and install it.
 
 After setting up the Flutter environment, run the command `flutter doctor`, and install the dependency according to the instructions.
 
-## 3️⃣ Config your appid (see example)
+## 3️⃣ Apply for the ZEGO Effects license
 
-```
-cd example
-./configure.sh
-```
+You need to refer to the following document to get your license.
 
-Run the configuration script with the `./configure.sh` command. And fill in the AppID and ServerSecret, which can be obtained in the [ZEGO Admin Console](https://console.zego.im/).
-**Note**: If you are using Windows system, double-click the `configure.bat` to run the configuration script.
+https://docs.zegocloud.com/article/12291
 
 ## 4️⃣ Import the `zego_express_engine`
 
@@ -37,7 +34,7 @@ dependencies:
   zego_effects: ^0.0.1
 ```
 
-- Using git
+- Using git 
 
 ```yaml
 dependencies:
@@ -52,7 +49,7 @@ dependencies:
 
 Run the command `flutter pub get` after saving the file.
 
-## 5️⃣ Add permissions
+##  5️⃣ Add permissions
 
 #### Android
 
@@ -150,15 +147,21 @@ Open the iOS native project (Runner. Xcworkspace) that needs to use the Platform
 
 This issue usually occurs when switching iOS devices and can be resolved by removing the `flutter-project-path/build/` and `flutter-project-path/ios/DerivedData/` directories. (if you cannot find `DerivedData` folder, find `/Users/your-user-name/Library/Developer/Xcode/DerivedData/` instead.)
 
+
+
 ##### 3. iOS: The error occurs when compiling: `CDN: trunk URL couldn't be downloaded` or `CDN: trunk Repo update failed`
 
 Open the Terminal, run 'cd' into the `ios` folder (the directory where the `Podfile` file is located) in the project root directory, and run the command `pod repo update`.
 
 This is usually caused by a poor network, it is recommended to enable the agent. For details, see [iOS CocoaPods - FAQ](https://doc-zh.zego.im/zh/1253.html).
 
+
+
 ##### 4. iOS: Black tearing crack occurs when previewing.
 
 Please enable Platform View for rendering on the iOS Platform. Due to some known compatibility issues, rendering with Texture for preview using the Express SDK on the iOS Platform cannot achieve the desired effect temporarily. This issue will be fixed in the later version.
+
+
 
 ##### 5. Android: When the Flutter was upgraded to V1.10 or later, `NoClassDefFoundError` appeared on the Android release causing the crash.
 
@@ -168,14 +171,18 @@ The Flutter has enabled code obfuscations by default in version 1.10 or later. P
 -keep class **.zego.**{*;}
 ```
 
+
+
 ##### 6. Android: The following crashes may occur when `TextureRenderer` is frequently created or destroyed.
 
 ```text
 OpenGLRenderer E [SurfaceTexture-0-4944-46] updateTexImage: SurfaceTexture is abandoned!
 
-    flutter E [ERROR:flutter/shell/platform/android/platform_view_android_jni.cc(39)] java.lang.RuntimeException: Error during updateTexImage (see logcat for details)
+​    flutter E [ERROR:flutter/shell/platform/android/platform_view_android_jni.cc(39)] java.lang.RuntimeException: Error during updateTexImage (see logcat for details)
 ```
 
 The cause of this issue is that the Flutter Engine caused thread insecurity when calling the updateTexImage() and release() of the SurfaceTexture, and this has been fixed in version `1.24-candidate.2`. For details, see [https://github.com/flutter/engine/pull/21777](https://github.com/flutter/engine/pull/21777)
 
-##### 7. For other questions, see [Q&amp;A](https://docs.zegocloud.com/faq/?product=AI_Vision&platform=android)
+
+
+##### 7. For other questions, see [Q&A](https://docs.zegocloud.com/faq/?product=AI_Vision&platform=android)

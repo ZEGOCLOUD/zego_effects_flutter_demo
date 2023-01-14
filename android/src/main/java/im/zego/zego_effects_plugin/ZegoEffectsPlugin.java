@@ -126,16 +126,8 @@ public class ZegoEffectsPlugin implements FlutterPlugin, MethodChannel.MethodCal
                     if (arg != null && arg.get("pendantName") != null) {
                         String pendantName = (String) arg.get("pendantName");
                         ZGEffectsHelper.getInstance().setPendant(mContext, pendantName);
-                    }
-                    result.success(null);
-                    break;
-
-                case "setFilter":
-                    //set custom pendant through local path
-                    //if path is null, SDK will remove pendant
-                    if (arg != null && arg.get("filterName") != null) {
-                        String filterName = (String) arg.get("filterName");
-                        ZGEffectsHelper.getInstance().setFilter(mContext, filterName);
+                    }else{
+                        ZGEffectsHelper.getInstance().setPendant(mContext, null);
                     }
                     result.success(null);
                     break;
@@ -268,6 +260,135 @@ public class ZegoEffectsPlugin implements FlutterPlugin, MethodChannel.MethodCal
                     }
                     result.success(null);
                     break;
+                case "enableBigEyes":
+                    if (arg != null && arg.get("enable") != null) {
+                        boolean enable = (boolean) arg.get("enable");
+                        ZGEffectsHelper.getInstance().enableBigEyes(enable);
+                    }
+                    result.success(null);
+                    break;
+
+                case "setBigEyesParam":
+                    if (arg != null && arg.get("intensity") != null ) {
+                        int intensity = (int) arg.get("intensity");
+                        ZGEffectsHelper.getInstance().setBigEyesParam(intensity);
+                    }
+                    result.success(null);
+                    break;
+
+                case "enableWrinklesRemoving":
+                    if (arg != null && arg.get("enable") != null) {
+                        boolean enable = (boolean) arg.get("enable");
+                        ZGEffectsHelper.getInstance().enableWrinklesRemoving(enable);
+                    }
+                    result.success(null);
+                    break;
+
+                case "setWrinklesRemovingParam":
+                    if (arg != null && arg.get("intensity") != null ) {
+                        int intensity = (int) arg.get("intensity");
+                        ZGEffectsHelper.getInstance().setWrinklesRemovingParam(intensity);
+                    }
+                    result.success(null);
+                    break;
+
+                case "enableDarkCirclesRemoving":
+                    if (arg != null && arg.get("enable") != null) {
+                        boolean enable = (boolean) arg.get("enable");
+                        ZGEffectsHelper.getInstance().enableDarkCirclesRemoving(enable);
+                    }
+                    result.success(null);
+                    break;
+
+                case "setDarkCirclesRemovingParam":
+                    if (arg != null && arg.get("intensity") != null ) {
+                        int intensity = (int) arg.get("intensity");
+                        ZGEffectsHelper.getInstance().setDarkCirclesRemovingParam(intensity);
+                    }
+                    result.success(null);
+                    break;
+
+                case "enableForeheadShortening":
+                    if (arg != null && arg.get("enable") != null) {
+                        boolean enable = (boolean) arg.get("enable");
+                        ZGEffectsHelper.getInstance().enableForeheadShortening(enable);
+                    }
+                    result.success(null);
+                    break;
+
+                case "setForeheadShorteningParam":
+                    if (arg != null && arg.get("intensity") != null ) {
+                        int intensity = (int) arg.get("intensity");
+                        ZGEffectsHelper.getInstance().setForeheadShorteningParam(intensity);
+                    }
+                    result.success(null);
+                    break;
+
+                case "enableMandibleSlimming":
+                    if (arg != null && arg.get("enable") != null) {
+                        boolean enable = (boolean) arg.get("enable");
+                        ZGEffectsHelper.getInstance().enableMandibleSlimming(enable);
+                    }
+                    result.success(null);
+                    break;
+
+                case "setMandibleSlimmingParam":
+                    if (arg != null && arg.get("intensity") != null ) {
+                        int intensity = (int) arg.get("intensity");
+                        ZGEffectsHelper.getInstance().setMandibleSlimmingParam(intensity);
+                    }
+                    result.success(null);
+                    break;
+
+
+                case "enableCheekboneSlimming":
+                    if (arg != null && arg.get("enable") != null) {
+                        boolean enable = (boolean) arg.get("enable");
+                        ZGEffectsHelper.getInstance().enableCheekboneSlimming(enable);
+                    }
+                    result.success(null);
+                    break;
+
+                case "setCheekboneSlimmingParam":
+                    if (arg != null && arg.get("intensity") != null ) {
+                        int intensity = (int) arg.get("intensity");
+                        ZGEffectsHelper.getInstance().setCheekboneSlimmingParam(intensity);
+                    }
+                    result.success(null);
+                    break;
+
+                case "enableFaceShortening":
+                    if (arg != null && arg.get("enable") != null) {
+                        boolean enable = (boolean) arg.get("enable");
+                        ZGEffectsHelper.getInstance().enableFaceShortening(enable);
+                    }
+                    result.success(null);
+                    break;
+
+                case "setFaceShorteningParam":
+                    if (arg != null && arg.get("intensity") != null ) {
+                        int intensity = (int) arg.get("intensity");
+                        ZGEffectsHelper.getInstance().setFaceShorteningParam(intensity);
+                    }
+                    result.success(null);
+                    break;
+
+
+                case "enableNoseLengthening":
+                    if (arg != null && arg.get("enable") != null) {
+                        boolean enable = (boolean) arg.get("enable");
+                        ZGEffectsHelper.getInstance().enableNoseLengthening(enable);
+                    }
+                    result.success(null);
+                    break;
+
+                case "setNoseLengtheningParam":
+                    if (arg != null && arg.get("intensity") != null ) {
+                        int intensity = (int) arg.get("intensity");
+                        ZGEffectsHelper.getInstance().setNoseLengtheningParam(intensity);
+                    }
+                    result.success(null);
+                    break;
 
                 case "enableWhiten":
                     //enable skin whiten function
@@ -287,11 +408,148 @@ public class ZegoEffectsPlugin implements FlutterPlugin, MethodChannel.MethodCal
                     result.success(null);
                     break;
 
+                case "setFilter":
+                    //set custom pendant through local path
+                    //if path is null, SDK will remove pendant
+                    if (arg != null && arg.get("filterName") != null) {
+                        String filterName = (String) arg.get("filterName");
+                        ZGEffectsHelper.getInstance().setFilter(mContext, filterName);
+                    }else{
+                        ZGEffectsHelper.getInstance().setFilter(mContext, null);
+                    }
+                    result.success(null);
+                    break;
+
                 case "setFilterParam":
-                    //set skin whiten parameters
                     if (arg != null && arg.get("intensity") != null ) {
                         int intensity = (int) arg.get("intensity");
                         ZGEffectsHelper.getInstance().setFilterParam(intensity);
+                    }
+                    result.success(null);
+                    break;
+
+                case "setEyeliner":
+                    if (arg != null && arg.get("name") != null) {
+                        String name = (String) arg.get("name");
+                        ZGEffectsHelper.getInstance().setEyeliner(mContext, name);
+                    }else{
+                        ZGEffectsHelper.getInstance().setEyeliner(mContext, null);
+                    }
+                    result.success(null);
+                    break;
+
+                case "setEyelinerParam":
+                    if (arg != null && arg.get("intensity") != null ) {
+                        int intensity = (int) arg.get("intensity");
+                        ZGEffectsHelper.getInstance().setEyelinerParam(intensity);
+                    }
+                    result.success(null);
+                    break;
+
+                case "setEyeshadow":
+                    if (arg != null && arg.get("name") != null) {
+                        String name = (String) arg.get("name");
+                        ZGEffectsHelper.getInstance().setEyeshadow(mContext, name);
+                    }else{
+                        ZGEffectsHelper.getInstance().setEyeshadow(mContext, null);
+                    }
+                    result.success(null);
+                    break;
+
+                case "setEyeshadowParam":
+                    if (arg != null && arg.get("intensity") != null ) {
+                        int intensity = (int) arg.get("intensity");
+                        ZGEffectsHelper.getInstance().setEyeshadowParam(intensity);
+                    }
+                    result.success(null);
+                    break;
+
+                case "setEyelashes":
+                    if (arg != null && arg.get("name") != null) {
+                        String name = (String) arg.get("name");
+                        ZGEffectsHelper.getInstance().setEyelashes(mContext, name);
+                    }else{
+                        ZGEffectsHelper.getInstance().setEyelashes(mContext, null);
+                    }
+                    result.success(null);
+                    break;
+
+                case "setEyelashesParam":
+                    if (arg != null && arg.get("intensity") != null ) {
+                        int intensity = (int) arg.get("intensity");
+                        ZGEffectsHelper.getInstance().setEyelashesParam(intensity);
+                    }
+                    result.success(null);
+                    break;
+
+                case "setBlusher":
+                    if (arg != null && arg.get("name") != null) {
+                        String name = (String) arg.get("name");
+                        ZGEffectsHelper.getInstance().setBlusher(mContext, name);
+                    }else{
+                        ZGEffectsHelper.getInstance().setBlusher(mContext, null);
+                    }
+                    result.success(null);
+                    break;
+
+                case "setBlusherParam":
+                    if (arg != null && arg.get("intensity") != null ) {
+                        int intensity = (int) arg.get("intensity");
+                        ZGEffectsHelper.getInstance().setBlusherParam(intensity);
+                    }
+                    result.success(null);
+                    break;
+
+                case "setLipstick":
+                    if (arg != null && arg.get("name") != null) {
+                        String name = (String) arg.get("name");
+                        ZGEffectsHelper.getInstance().setLipstick(mContext, name);
+                    }else{
+                        ZGEffectsHelper.getInstance().setLipstick(mContext, null);
+                    }
+                    result.success(null);
+                    break;
+
+                case "setLipstickParam":
+                    if (arg != null && arg.get("intensity") != null ) {
+                        int intensity = (int) arg.get("intensity");
+                        ZGEffectsHelper.getInstance().setLipstickParam(intensity);
+                    }
+                    result.success(null);
+                    break;
+
+                case "setColoredcontacts":
+                    if (arg != null && arg.get("name") != null) {
+                        String name = (String) arg.get("name");
+                        ZGEffectsHelper.getInstance().setColoredcontacts(mContext, name);
+                    }else{
+                        ZGEffectsHelper.getInstance().setColoredcontacts(mContext, null);
+                    }
+                    result.success(null);
+                    break;
+
+                case "setColoredcontactsParam":
+                    if (arg != null && arg.get("intensity") != null ) {
+                        int intensity = (int) arg.get("intensity");
+                        ZGEffectsHelper.getInstance().setColoredcontactsParam(intensity);
+                    }
+                    result.success(null);
+                    break;
+
+                case "setMakeup":
+                    if (arg != null && arg.get("name") != null) {
+                        String name = (String) arg.get("name");
+                        ZGEffectsHelper.getInstance().setMakeup(mContext, name);
+                    }else{
+                        ZGEffectsHelper.getInstance().setMakeup(mContext, null);
+                    }
+                    result.success(null);
+                    break;
+
+                case "setMakeupParam":
+                    if (arg != null && arg.get("intensity") != null ) {
+                        int intensity = (int) arg.get("intensity");
+                        ZGEffectsHelper.getInstance().setMakeupParam(intensity);
                     }
                     result.success(null);
                     break;

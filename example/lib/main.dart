@@ -1,7 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'dart:async';
 
-import 'zego_config.dart';
+import 'package:flutter/services.dart';
+import 'package:zego_effects_plugin/zego_effects_plugin.dart';
 import 'zego_effects_init_page.dart';
 
 void main() {
@@ -33,7 +35,7 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
-    ZegoConfig.instance.init();
+    //
   }
 
   void onEnterEffectsPageBtnPressed() {

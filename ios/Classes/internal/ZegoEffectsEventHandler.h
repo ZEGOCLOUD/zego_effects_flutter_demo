@@ -9,6 +9,7 @@
 #import <Flutter/Flutter.h>
 #import <ZegoEffects/ZegoEffects.h>
 
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZegoEffectsEventHandler : NSObject<ZegoEffectsEventHandler>

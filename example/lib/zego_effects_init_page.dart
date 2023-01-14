@@ -15,7 +15,7 @@ class EffectsInitPage extends StatefulWidget {
 
 class _EffectsInitPageState extends State<EffectsInitPage> {
   final TextEditingController _licenseEditController =
-      new TextEditingController(text: '');
+  new TextEditingController(text: '');
 
   bool _isCameraPermissionGranted = false;
   bool _isMicrophonePermissionGranted = false;
@@ -26,9 +26,9 @@ class _EffectsInitPageState extends State<EffectsInitPage> {
     super.initState();
 
     Permission.camera.status.then((value) => setState(
-        () => _isCameraPermissionGranted = value == PermissionStatus.granted));
+            () => _isCameraPermissionGranted = value == PermissionStatus.granted));
     Permission.microphone.status.then((value) => setState(() =>
-        _isMicrophonePermissionGranted = value == PermissionStatus.granted));
+    _isMicrophonePermissionGranted = value == PermissionStatus.granted));
     if (!_isCameraPermissionGranted) {
       print(_isCameraPermissionGranted);
       requestCameraPermission();
@@ -114,25 +114,27 @@ class _EffectsInitPageState extends State<EffectsInitPage> {
         onPressed: _isGetLicenseButtonDisabled
             ? null
             : () {
-                setState(() => _isGetLicenseButtonDisabled = true);
-                ZegoEffectsPlugin.instance
-                    .getAuthInfo(ZegoConfig.instance.appSign)
-                    .then((AuthInfo) {
-                  print('EffectsInitPage Get AuthInfo');
-                  HttpGet("https://aieffects-api.zego.im?Action=DescribeEffectsLicense&AppId=${ZegoConfig.instance.appID}&AuthInfo=${AuthInfo}")
-                      .then((value) {
-                    print('EffectsInitPage Get license ${value['Code']}');
-                    print('EffectsInitPage Get license ${value['Message']}');
-                    ZegoUtils.showAlert(context, 'License: $value');
-                    if (value['Code'] == 0) {
-                      setState(() {
-                        _licenseEditController.text = value['Data']['License'];
-                        _isGetLicenseButtonDisabled = false;
-                      });
-                    }
-                  });
+          setState(() => _isGetLicenseButtonDisabled = true);
+          ZegoEffectsPlugin.instance
+              .getAuthInfo(ZegoConfig.instance.appSign)
+              .then((AuthInfo) {
+            print('EffectsInitPage Get AuthInfo');
+            HttpGet("https://aieffects-api.zego.im?Action=DescribeEffectsLicense&AppId=${ZegoConfig.instance.appID}&AuthInfo=${AuthInfo}")
+                .then((value) {
+              print('EffectsInitPage Get license ${value['Code']}');
+              print('EffectsInitPage Get license ${value['Message']}');
+              ZegoUtils.showAlert(context, 'License: $value');
+              if (value['Code'] == 0) {
+                setState(() {
+                  String license = value['Data']['License'];
+                  _licenseEditController.text = license;
+                  print("license = $license");
+                  _isGetLicenseButtonDisabled = false;
                 });
-              },
+              }
+            });
+          });
+        },
       ),
     );
   }
@@ -169,16 +171,16 @@ class _EffectsInitPageState extends State<EffectsInitPage> {
           controller: _licenseEditController,
           decoration: InputDecoration(
             contentPadding:
-                const EdgeInsets.only(left: 10.0, top: 12.0, bottom: 12.0),
+            const EdgeInsets.only(left: 10.0, top: 12.0, bottom: 12.0),
             hintText: 'Please click get license first',
             enabledBorder: OutlineInputBorder(
                 borderSide: BorderSide(
-              color: Colors.grey,
-            )),
+                  color: Colors.grey,
+                )),
             focusedBorder: OutlineInputBorder(
                 borderSide: BorderSide(
-              color: Color(0xff0e88eb),
-            )),
+                  color: Color(0xff0e88eb),
+                )),
           ),
         ),
       ],

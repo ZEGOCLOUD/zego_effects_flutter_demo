@@ -9,14 +9,27 @@ import java.util.ArrayList;
 
 import im.zego.effects.ZegoEffects;
 import im.zego.effects.callback.ZegoEffectsEventHandler;
+import im.zego.effects.entity.ZegoEffectsBigEyesParam;
 import im.zego.effects.entity.ZegoEffectsBlurParam;
+import im.zego.effects.entity.ZegoEffectsBlusherParam;
 import im.zego.effects.entity.ZegoEffectsChromaKeyParam;
+import im.zego.effects.entity.ZegoEffectsColoredcontactsParam;
+import im.zego.effects.entity.ZegoEffectsDarkCirclesRemovingParam;
+import im.zego.effects.entity.ZegoEffectsEyelashesParam;
+import im.zego.effects.entity.ZegoEffectsEyelinerParam;
 import im.zego.effects.entity.ZegoEffectsEyesBrighteningParam;
+import im.zego.effects.entity.ZegoEffectsEyeshadowParam;
 import im.zego.effects.entity.ZegoEffectsFaceDetectionResult;
 import im.zego.effects.entity.ZegoEffectsFaceLiftingParam;
+import im.zego.effects.entity.ZegoEffectsFaceShorteningParam;
 import im.zego.effects.entity.ZegoEffectsFilterParam;
+import im.zego.effects.entity.ZegoEffectsForeheadShorteningParam;
+import im.zego.effects.entity.ZegoEffectsLipstickParam;
 import im.zego.effects.entity.ZegoEffectsLongChinParam;
+import im.zego.effects.entity.ZegoEffectsMakeupParam;
+import im.zego.effects.entity.ZegoEffectsMandibleSlimmingParam;
 import im.zego.effects.entity.ZegoEffectsMosaicParam;
+import im.zego.effects.entity.ZegoEffectsNoseLengtheningParam;
 import im.zego.effects.entity.ZegoEffectsNoseNarrowingParam;
 import im.zego.effects.entity.ZegoEffectsRect;
 import im.zego.effects.entity.ZegoEffectsRosyParam;
@@ -25,6 +38,7 @@ import im.zego.effects.entity.ZegoEffectsSmallMouthParam;
 import im.zego.effects.entity.ZegoEffectsSmoothParam;
 import im.zego.effects.entity.ZegoEffectsTeethWhiteningParam;
 import im.zego.effects.entity.ZegoEffectsWhitenParam;
+import im.zego.effects.entity.ZegoEffectsWrinklesRemovingParam;
 import im.zego.effects.enums.ZegoEffectsMosaicType;
 import im.zego.effects.enums.ZegoEffectsScaleMode;
 import im.zego.zego_effects_plugin.capture.VideoCaptureFromCamera2;
@@ -66,7 +80,7 @@ public class ZGEffectsHelper {
         ArrayList<String> aiModeInfoList = copyAiModeInfoList(context);
         ArrayList<String> resourcesInfoList = copyResourcesInfoList(context);
         aiModeInfoList.addAll(resourcesInfoList);
-        Log.d(TAG, "setModels: size = " + resourcesInfoList.size());
+        Log.d(TAG, "setModels: size = " + aiModeInfoList.size());
         ZegoEffects.setResources(aiModeInfoList);
     }
 
@@ -157,8 +171,7 @@ public class ZGEffectsHelper {
         }
 
         mVideoCaptureFromCamera2 = new VideoCaptureFromCamera2(mZegoEffects, mEffectWidth, mEffectHeight);
-        ZegoCustomVideoCaptureManager.getInstance().setCustomVideoCaptureHandler(
-                mVideoCaptureFromCamera2);
+        ZegoCustomVideoCaptureManager.getInstance().setCustomVideoCaptureHandler(mVideoCaptureFromCamera2);
     }
 
     //stop capture
@@ -200,26 +213,195 @@ public class ZGEffectsHelper {
         }
     }
 
-    //set effects pendant
     void setFilter(Context context, String filterName){
         Log.d(TAG, "setFilter: " + filterName);
         if (mZegoEffects != null) {
-            String path = context.getExternalCacheDir().getPath();
-            String bundle = "Resources/ColorfulStyleResources/" + filterName + ".bundle";
-            LogUtil.e("setFilter", bundle);
-            String modelPath = path + File.separator + bundle;
-            Log.d(TAG, "setFilter: path = " + modelPath);
-            FileUtil.copyFileFromAssets(context, bundle, modelPath);
-            mZegoEffects.setFilter(modelPath);
+            if (filterName != null){
+                String path = context.getExternalCacheDir().getPath();
+                String bundle = "Resources/ColorfulStyleResources/" + filterName + ".bundle";
+                LogUtil.e("setFilter", bundle);
+                String modelPath = path + File.separator + bundle;
+                Log.d(TAG, "setFilter: path = " + modelPath);
+                FileUtil.copyFileFromAssets(context, bundle, modelPath);
+                mZegoEffects.setFilter(modelPath);
+            }else{
+                mZegoEffects.setFilter(null);
+            }
         }
     }
 
-    //set effects filter param
     void setFilterParam(int intensity){
         if (mZegoEffects != null) {
             ZegoEffectsFilterParam param = new ZegoEffectsFilterParam();
             param.intensity = intensity;
             mZegoEffects.setFilterParam(param);
+        }
+    }
+
+    void setEyeliner(Context context, String name){
+        Log.d(TAG, "setEyeliner: " + name);
+        if (mZegoEffects != null) {
+            if (name != null){
+                String path = context.getExternalCacheDir().getPath();
+                String bundle = "Resources/MakeupResources/eyelinerdir/" + name + ".bundle";
+                String modelPath = path + File.separator + bundle;
+                FileUtil.copyFileFromAssets(context, bundle, modelPath);
+                mZegoEffects.setEyeliner(modelPath);
+            }else{
+                mZegoEffects.setEyeliner(null);
+            }
+        }
+    }
+
+    void setEyelinerParam(int intensity){
+        if (mZegoEffects != null) {
+            ZegoEffectsEyelinerParam param = new ZegoEffectsEyelinerParam();
+            param.intensity = intensity;
+            mZegoEffects.setEyelinerParam(param);
+        }
+    }
+
+    void setEyeshadow(Context context, String name){
+        Log.d(TAG, "setEyeshadow: " + name);
+        if (mZegoEffects != null) {
+            if (name != null){
+                String path = context.getExternalCacheDir().getPath();
+                String bundle = "Resources/MakeupResources/eyeshadowdir/" + name + ".bundle";
+                String modelPath = path + File.separator + bundle;
+                FileUtil.copyFileFromAssets(context, bundle, modelPath);
+                mZegoEffects.setEyeshadow(modelPath);
+            }else{
+                mZegoEffects.setEyeshadow(null);
+            }
+
+        }
+    }
+
+    void setEyeshadowParam(int intensity){
+        if (mZegoEffects != null) {
+            ZegoEffectsEyeshadowParam param = new ZegoEffectsEyeshadowParam();
+            param.intensity = intensity;
+            mZegoEffects.setEyeshadowParam(param);
+        }
+    }
+
+    void setEyelashes(Context context, String name){
+        Log.d(TAG, "setEyelashes: " + name);
+        if (mZegoEffects != null) {
+            if (name != null){
+                String path = context.getExternalCacheDir().getPath();
+                String bundle = "Resources/MakeupResources/eyelashesdir/" + name + ".bundle";
+                String modelPath = path + File.separator + bundle;
+                FileUtil.copyFileFromAssets(context, bundle, modelPath);
+                mZegoEffects.setEyelashes(modelPath);
+            }else{
+                mZegoEffects.setEyelashes(null);
+            }
+
+        }
+    }
+
+    void setEyelashesParam(int intensity){
+        if (mZegoEffects != null) {
+            ZegoEffectsEyelashesParam param = new ZegoEffectsEyelashesParam();
+            param.intensity = intensity;
+            mZegoEffects.setEyelashesParam(param);
+        }
+    }
+
+    void setBlusher(Context context, String name){
+        Log.d(TAG, "setBlusher: " + name);
+        if (mZegoEffects != null) {
+            if (name != null){
+                String path = context.getExternalCacheDir().getPath();
+                String bundle = "Resources/MakeupResources/blusherdir/" + name + ".bundle";
+                String modelPath = path + File.separator + bundle;
+                FileUtil.copyFileFromAssets(context, bundle, modelPath);
+                mZegoEffects.setBlusher(modelPath);
+            }else{
+                mZegoEffects.setBlusher(null);
+            }
+
+        }
+    }
+
+    void setBlusherParam(int intensity){
+        if (mZegoEffects != null) {
+            ZegoEffectsBlusherParam param = new ZegoEffectsBlusherParam();
+            param.intensity = intensity;
+            mZegoEffects.setBlusherParam(param);
+        }
+    }
+
+    void setLipstick(Context context, String name){
+        Log.d(TAG, "setLipstick: " + name);
+        if (mZegoEffects != null) {
+            if (name != null){
+                String path = context.getExternalCacheDir().getPath();
+                String bundle = "Resources/MakeupResources/lipstickdir/" + name + ".bundle";
+                String modelPath = path + File.separator + bundle;
+                FileUtil.copyFileFromAssets(context, bundle, modelPath);
+                mZegoEffects.setLipstick(modelPath);
+            }else{
+                mZegoEffects.setLipstick(null);
+            }
+
+        }
+    }
+
+    void setLipstickParam(int intensity){
+        if (mZegoEffects != null) {
+            ZegoEffectsLipstickParam param = new ZegoEffectsLipstickParam();
+            param.intensity = intensity;
+            mZegoEffects.setLipstickParam(param);
+        }
+    }
+
+    void setColoredcontacts(Context context, String name){
+        Log.d(TAG, "setColoredcontacts: " + name);
+        if (mZegoEffects != null) {
+            if (name != null){
+                String path = context.getExternalCacheDir().getPath();
+                String bundle = "Resources/MakeupResources/coloredcontactsdir/" + name + ".bundle";
+                String modelPath = path + File.separator + bundle;
+                FileUtil.copyFileFromAssets(context, bundle, modelPath);
+                mZegoEffects.setColoredcontacts(modelPath);
+            }else{
+                mZegoEffects.setColoredcontacts(null);
+            }
+
+        }
+    }
+
+    void setColoredcontactsParam(int intensity){
+        if (mZegoEffects != null) {
+            ZegoEffectsColoredcontactsParam param = new ZegoEffectsColoredcontactsParam();
+            param.intensity = intensity;
+            mZegoEffects.setColoredcontactsParam(param);
+        }
+    }
+
+    void setMakeup(Context context, String name){
+        Log.d(TAG, "setMakeup: " + name);
+        if (mZegoEffects != null) {
+            if (name != null){
+                String path = context.getExternalCacheDir().getPath();
+                String bundle = "Resources/MakeupResources/makeupdir/" + name + ".bundle";
+                String modelPath = path + File.separator + bundle;
+                FileUtil.copyFileFromAssets(context, bundle, modelPath);
+                mZegoEffects.setMakeup(modelPath);
+            }else{
+                mZegoEffects.setMakeup(null);
+            }
+
+        }
+    }
+
+    void setMakeupParam(int intensity){
+        if (mZegoEffects != null) {
+            ZegoEffectsMakeupParam param = new ZegoEffectsMakeupParam();
+            param.intensity = intensity;
+            mZegoEffects.setMakeupParam(param);
         }
     }
 
@@ -255,13 +437,55 @@ public class ZGEffectsHelper {
 
     void enableFaceLifting(boolean enable) {
         if (mZegoEffects != null) {
-            mZegoEffects.enableFaceDetection(enable);
+            mZegoEffects.enableFaceLifting(enable);
         }
     }
 
     void enableWhiten(boolean enable) {
         if (mZegoEffects != null) {
             mZegoEffects.enableWhiten(enable);
+        }
+    }
+
+    void enableWrinklesRemoving(boolean enable) {
+        if (mZegoEffects != null) {
+            mZegoEffects.enableWrinklesRemoving(enable);
+        }
+    }
+
+    void enableDarkCirclesRemoving(boolean enable) {
+        if (mZegoEffects != null) {
+            mZegoEffects.enableDarkCirclesRemoving(enable);
+        }
+    }
+
+    void enableForeheadShortening(boolean enable) {
+        if (mZegoEffects != null) {
+            mZegoEffects.enableForeheadShortening(enable);
+        }
+    }
+
+    void enableMandibleSlimming(boolean enable) {
+        if (mZegoEffects != null) {
+            mZegoEffects.enableMandibleSlimming(enable);
+        }
+    }
+
+    void enableCheekboneSlimming(boolean enable) {
+        if (mZegoEffects != null) {
+            mZegoEffects.enableCheekboneSlimming(enable);
+        }
+    }
+
+    void enableNoseLengthening(boolean enable) {
+        if (mZegoEffects != null) {
+            mZegoEffects.enableNoseLengthening(enable);
+        }
+    }
+
+    void enableFaceShortening(boolean enable) {
+        if (mZegoEffects != null) {
+            mZegoEffects.enableFaceShortening(enable);
         }
     }
 
@@ -298,6 +522,12 @@ public class ZGEffectsHelper {
     void enableEyesBrightening(boolean enable) {
         if (mZegoEffects != null) {
             mZegoEffects.enableEyesBrightening(enable);
+        }
+    }
+
+    void enableBigEyes(boolean enable) {
+        if (mZegoEffects != null) {
+            mZegoEffects.enableBigEyes(enable);
         }
     }
 
@@ -453,6 +683,72 @@ public class ZGEffectsHelper {
             mZegoEffects.setFaceLiftingParam(zegoEffectsFaceLiftingParam);
         }
     }
+
+    void setBigEyesParam(int intensity){
+        if (mZegoEffects != null) {
+            ZegoEffectsBigEyesParam param = new ZegoEffectsBigEyesParam();
+            param.setIntensity(intensity);
+            mZegoEffects.setBigEyesParam(param);
+        }
+    }
+
+    void setWrinklesRemovingParam(int intensity){
+        if (mZegoEffects != null) {
+            ZegoEffectsWrinklesRemovingParam param = new ZegoEffectsWrinklesRemovingParam();
+            param.setIntensity(intensity);
+            mZegoEffects.setWrinklesRemovingParam(param);
+        }
+    }
+
+    void setDarkCirclesRemovingParam(int intensity){
+        if (mZegoEffects != null) {
+            ZegoEffectsDarkCirclesRemovingParam param = new ZegoEffectsDarkCirclesRemovingParam();
+            param.setIntensity(intensity);
+            mZegoEffects.setDarkCirclesRemovingParam(param);
+        }
+    }
+
+    void setForeheadShorteningParam(int intensity){
+        if (mZegoEffects != null) {
+            ZegoEffectsForeheadShorteningParam param = new ZegoEffectsForeheadShorteningParam();
+            param.setIntensity(intensity);
+            mZegoEffects.setForeheadShorteningParam(param);
+        }
+    }
+
+    void setMandibleSlimmingParam(int intensity){
+        if (mZegoEffects != null) {
+            ZegoEffectsMandibleSlimmingParam param = new ZegoEffectsMandibleSlimmingParam();
+            param.setGetIntensity(intensity);
+            mZegoEffects.setMandibleSlimmingParam(param);
+        }
+    }
+
+    void setFaceShorteningParam(int intensity){
+        if (mZegoEffects != null) {
+            ZegoEffectsFaceShorteningParam param = new ZegoEffectsFaceShorteningParam();
+            param.setIntensity(intensity);
+            mZegoEffects.setFaceShorteningParam(param);
+        }
+    }
+
+    void setNoseLengtheningParam(int intensity){
+        if (mZegoEffects != null) {
+            ZegoEffectsNoseLengtheningParam param = new ZegoEffectsNoseLengtheningParam();
+            param.setIntensity(intensity);
+            mZegoEffects.setNoseLengtheningParam(param);
+        }
+    }
+
+    void setCheekboneSlimmingParam(int intensity){
+        if (mZegoEffects != null) {
+            ZegoEffectsWrinklesRemovingParam param = new ZegoEffectsWrinklesRemovingParam();
+            param.setIntensity(intensity);
+            mZegoEffects.setWrinklesRemovingParam(param);
+        }
+    }
+
+
 
     void setPortraitSegmentationBackgroundPath(String path, ZegoEffectsScaleMode mode){
         if (mZegoEffects != null) {

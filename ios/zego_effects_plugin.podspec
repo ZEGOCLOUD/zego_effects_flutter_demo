@@ -15,7 +15,7 @@ A new flutter plugin project.
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'
-  s.vendored_frameworks = '*.xcframework', '*.framework'
+  s.vendored_frameworks = 'ZegoEffects.xcframework'
   s.platform = :ios, '9.0'
 
   # Flutter.framework does not contain a i386 slice.

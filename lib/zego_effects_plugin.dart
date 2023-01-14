@@ -185,6 +185,45 @@ class ZegoEffectsPlugin {
         .invokeMethod('setFaceLiftingParam', {'intensity': param.intensity});
   }
 
+
+  /// enable big eyes function
+  Future<void> enableBigEyes(bool enable) async {
+    return await _channel.invokeMethod('enableBigEyes', {'enable': enable});
+  }
+
+  /// set big eyes parameters
+  /// @param param see also 'ZegoEffectsBigEyesParam'
+  Future<void> setBigEyesParam(ZegoEffectsBigEyesParam param) async {
+    return await _channel
+        .invokeMethod('setBigEyesParam', {'intensity': param.intensity});
+  }
+
+
+  /// enable face wrinkles removing function
+  Future<void> enableWrinklesRemoving(bool enable) async {
+    return await _channel.invokeMethod('enableWrinklesRemoving', {'enable': enable});
+  }
+
+  /// set face wrinkles removing parameters
+  /// @param param see also 'ZegoEffectsWrinklesRemovingParam'
+  Future<void> setWrinklesRemovingParam(ZegoEffectsWrinklesRemovingParam param) async {
+    return await _channel
+        .invokeMethod('setWrinklesRemovingParam', {'intensity': param.intensity});
+  }
+
+  /// enable the darkcircles removing function
+  Future<void> enableDarkCirclesRemoving(bool enable) async {
+    return await _channel.invokeMethod('enableDarkCirclesRemoving', {'enable': enable});
+  }
+
+  /// Set the darkcircles removing parameters.
+  /// @param param see also 'setDarkCirclesRemovingParam'
+  Future<void> setDarkCirclesRemovingParam(ZegoEffectsDarkCirclesRemovingParam param) async {
+    return await _channel
+        .invokeMethod('setDarkCirclesRemovingParam', {'intensity': param.intensity});
+  }
+
+
   /// enable skin whiten function
   Future<void> enableWhiten(bool enable) async {
     return await _channel.invokeMethod('enableWhiten', {'enable': enable});
@@ -244,6 +283,66 @@ class ZegoEffectsPlugin {
   Future<void> setLongChinParam(ZegoEffectsLongChinParam param) async {
     return await _channel
         .invokeMethod('setLongChinParam', {'intensity': param.intensity});
+  }
+
+  /// enable Forehead shortening function
+  Future<void> enableForeheadShortening(bool enable) async {
+    return await _channel.invokeMethod('enableForeheadShortening', {'enable': enable});
+  }
+
+  /// set Forehead shortening parameters
+  /// @param param see also 'ZegoEffectsForeheadShorteningParam'
+  Future<void> setForeheadShorteningParam(ZegoEffectsForeheadShorteningParam param) async {
+    return await _channel
+        .invokeMethod('setForeheadShorteningParam', {'intensity': param.intensity});
+  }
+
+  /// enable Mandible slimming  function
+  Future<void> enableMandibleSlimming(bool enable) async {
+    return await _channel.invokeMethod('enableMandibleSlimming', {'enable': enable});
+  }
+
+  /// set Mandible slimming parameters
+  /// @param param see also 'ZegoEffectsMandibleSlimmingParam'
+  Future<void> setMandibleSlimmingParam(ZegoEffectsMandibleSlimmingParam param) async {
+    return await _channel
+        .invokeMethod('setForeheadShorteningParam', {'intensity': param.intensity});
+  }
+
+  /// enable cheekbone slimming  function
+  Future<void> enableCheekboneSlimming(bool enable) async {
+    return await _channel.invokeMethod('enableCheekboneSlimming', {'enable': enable});
+  }
+
+  /// set cheekbone slimming parameters
+  /// @param param see also 'ZegoEffectsCheekboneSlimmingParam'
+  Future<void> setCheekboneSlimmingParam(ZegoEffectsCheekboneSlimmingParam param) async {
+    return await _channel
+        .invokeMethod('setCheekboneSlimmingParam', {'intensity': param.intensity});
+  }
+
+  /// enable face Shortening function
+  Future<void> enableFaceShortening(bool enable) async {
+    return await _channel.invokeMethod('enableFaceShortening', {'enable': enable});
+  }
+
+  /// set face Shortening parameters
+  /// @param param see also 'ZegoEffectsFaceShorteningParam'
+  Future<void> setFaceShorteningParam(ZegoEffectsFaceShorteningParam param) async {
+    return await _channel
+        .invokeMethod('setFaceShorteningParam', {'intensity': param.intensity});
+  }
+
+  /// enable nose lenghening function
+  Future<void> enableNoseLengthening(bool enable) async {
+    return await _channel.invokeMethod('enableNoseLengthening', {'enable': enable});
+  }
+
+  /// set nose lenghening parameters
+  /// @param param see also 'ZegoEffectsNoseLengtheningParam'
+  Future<void> setNoseLengtheningParam(ZegoEffectsNoseLengtheningParam param) async {
+    return await _channel
+        .invokeMethod('ZegoEffectsNoseLengtheningParam', {'intensity': param.intensity});
   }
 
   /// enable nose narrowing function
@@ -378,6 +477,93 @@ class ZegoEffectsPlugin {
     return await _channel.invokeMethod('setChromaKeyForegroundPosition',
         {'x': x, 'y': y, 'width': width, 'height': height});
   }
+
+  //--------- make up features ----------
+
+  /// set eyeliner function
+  Future<void> setEyeliner(String name) async {
+    return await _channel.invokeMethod('setEyeliner', {'name': name});
+  }
+
+  /// set eyelinerer funtion parameters
+  /// @param param see also 'ZegoEffectsEyelinerParam'
+  Future<void> setEyelinerParam(ZegoEffectsEyelinerParam param) async {
+    return await _channel
+        .invokeMethod('setEyelinerParam', {'intensity': param.intensity});
+  }
+
+  /// set eyeshadow function
+  Future<void> setEyeshadow(String name) async {
+    return await _channel.invokeMethod('setEyeshadow', {'name': name});
+  }
+
+  /// set eyeshadow funtion parameters
+  /// @param param see also 'ZegoEffectsEyeshadowParam'
+  Future<void> setEyeshadowParam(ZegoEffectsEyeshadowParam param) async {
+    return await _channel
+        .invokeMethod('setEyeshadowParam', {'intensity': param.intensity});
+  }
+
+  /// set eyelashes function
+  Future<void> setEyelashes(String name) async {
+    return await _channel.invokeMethod('setEyelashes', {'name': name});
+  }
+
+  /// set eyelashes funtion parameters
+  /// @param param see also 'ZegoEffectsEyelashesParam'
+  Future<void> setEyelashesParam(ZegoEffectsEyelashesParam param) async {
+    return await _channel
+        .invokeMethod('setEyelashesParam', {'intensity': param.intensity});
+  }
+
+  /// set blusher function
+  Future<void> setBlusher(String name) async {
+    return await _channel.invokeMethod('setBlusher', {'name': name});
+  }
+
+  /// set blusher funtion parameters
+  /// @param param see also 'ZegoEffectsBlusherParam'
+  Future<void> setBlusherParam(ZegoEffectsBlusherParam param) async {
+    return await _channel
+        .invokeMethod('setBlusherParam', {'intensity': param.intensity});
+  }
+
+  /// set lipstick function
+  Future<void> setLipstick(String name) async {
+    return await _channel.invokeMethod('setLipstick', {'name': name});
+  }
+
+  /// set eyelinerer funtion parameters
+  /// @param param see also 'ZegoEffectsLipstickParam'
+  Future<void> setLipstickParam(ZegoEffectsLipstickParam param) async {
+    return await _channel
+        .invokeMethod('setLipstickParam', {'intensity': param.intensity});
+  }
+
+  /// set colored contacts function
+  Future<void> setColoredcontacts(String name) async {
+    return await _channel.invokeMethod('setColoredcontacts', {'name': name});
+  }
+
+  /// set colored contacts funtion parameters
+  /// @param param see also 'ZegoEffectsColoredcontactsParam'
+  Future<void> setColoredcontactsParam(ZegoEffectsColoredcontactsParam param) async {
+    return await _channel
+        .invokeMethod('setColoredcontactsParam', {'intensity': param.intensity});
+  }
+
+  /// set makeup function
+  Future<void> setMakeup(String name) async {
+    return await _channel.invokeMethod('setMakeup', {'name': name});
+  }
+
+  /// set makeup funtion parameters
+  /// @param param see also 'ZegoEffectsMakeupParam'
+  Future<void> setMakeupParam(ZegoEffectsMakeupParam param) async {
+    return await _channel
+        .invokeMethod('setMakeupParam', {'intensity': param.intensity});
+  }
+
 
   /*Event Callback*/
   static Future<void> registerEventCallback({

@@ -3,79 +3,79 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */; };
 		3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
 		74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74858FAE1ED2DC5600515810 /* AppDelegate.swift */; };
-		866ACC0426BBD97300F21CDC /* SegmentationModel.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBC926BBD97300F21CDC /* SegmentationModel.bundle */; };
-		866ACC0526BBD97300F21CDC /* FaceDetectionModel.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBCA26BBD97300F21CDC /* FaceDetectionModel.bundle */; };
 		866ACC0626BBD97300F21CDC /* pendantGirl.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBCC26BBD97300F21CDC /* pendantGirl.bundle */; };
 		866ACC0726BBD97300F21CDC /* pendantFacefilm.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBCD26BBD97300F21CDC /* pendantFacefilm.bundle */; };
 		866ACC0826BBD97300F21CDC /* pendantBaby.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBCE26BBD97300F21CDC /* pendantBaby.bundle */; };
-		866ACC0926BBD97300F21CDC /* pendantXigua.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBCF26BBD97300F21CDC /* pendantXigua.bundle */; };
-		866ACC0A26BBD97300F21CDC /* pendantRabbit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBD026BBD97300F21CDC /* pendantRabbit.bundle */; };
 		866ACC0B26BBD97300F21CDC /* pendantDive.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBD126BBD97300F21CDC /* pendantDive.bundle */; };
 		866ACC0C26BBD97300F21CDC /* pendantDeer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBD226BBD97300F21CDC /* pendantDeer.bundle */; };
 		866ACC0D26BBD97300F21CDC /* pendantClown.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBD326BBD97300F21CDC /* pendantClown.bundle */; };
 		866ACC0E26BBD97300F21CDC /* pendantAnimal.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBD426BBD97300F21CDC /* pendantAnimal.bundle */; };
-		866ACC0F26BBD97300F21CDC /* FaceWhiteningResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBD626BBD97300F21CDC /* FaceWhiteningResources.bundle */; };
-		866ACC1026BBD97300F21CDC /* TeethWhiteningResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBD726BBD97300F21CDC /* TeethWhiteningResources.bundle */; };
-		866ACC1126BBD97300F21CDC /* RosyResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBD826BBD97300F21CDC /* RosyResources.bundle */; };
-		866ACC1226BBD97300F21CDC /* PendantResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBD926BBD97300F21CDC /* PendantResources.bundle */; };
-		866ACC1326BBD97300F21CDC /* vitality_orange.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBDC26BBD97300F21CDC /* vitality_orange.bundle */; };
-		866ACC1426BBD97300F21CDC /* mocha_brown.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBDD26BBD97300F21CDC /* mocha_brown.bundle */; };
-		866ACC1526BBD97300F21CDC /* shimmer_pink.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBDE26BBD97300F21CDC /* shimmer_pink.bundle */; };
-		866ACC1626BBD97300F21CDC /* mist_pink.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBDF26BBD97300F21CDC /* mist_pink.bundle */; };
-		866ACC1726BBD97300F21CDC /* tea_brown.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBE026BBD97300F21CDC /* tea_brown.bundle */; };
-		866ACC1826BBD97300F21CDC /* bean_paste_pink.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBE226BBD97300F21CDC /* bean_paste_pink.bundle */; };
-		866ACC1926BBD97300F21CDC /* coral.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBE326BBD97300F21CDC /* coral.bundle */; };
-		866ACC1A26BBD97300F21CDC /* velvet_red.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBE426BBD97300F21CDC /* velvet_red.bundle */; };
-		866ACC1C26BBD97300F21CDC /* rust_red.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBE626BBD97300F21CDC /* rust_red.bundle */; };
-		866ACC1E26BBD97300F21CDC /* curl.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBE926BBD97300F21CDC /* curl.bundle */; };
-		866ACC1F26BBD97300F21CDC /* tender.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBEA26BBD97300F21CDC /* tender.bundle */; };
-		866ACC2026BBD97300F21CDC /* bushy.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBEB26BBD97300F21CDC /* bushy.bundle */; };
-		866ACC2126BBD97300F21CDC /* slender.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBEC26BBD97300F21CDC /* slender.bundle */; };
-		866ACC2226BBD97300F21CDC /* apricot_pink.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBEE26BBD97300F21CDC /* apricot_pink.bundle */; };
-		866ACC2326BBD97300F21CDC /* peach.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBEF26BBD97300F21CDC /* peach.bundle */; };
-		866ACC2426BBD97300F21CDC /* sweet_orange.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBF026BBD97300F21CDC /* sweet_orange.bundle */; };
-		866ACC2526BBD97300F21CDC /* slightly_drunk.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBF126BBD97300F21CDC /* slightly_drunk.bundle */; };
-		866ACC2626BBD97300F21CDC /* milk_orange.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBF226BBD97300F21CDC /* milk_orange.bundle */; };
-		866ACC2726BBD97300F21CDC /* wildcat.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBF426BBD97300F21CDC /* wildcat.bundle */; };
-		866ACC2826BBD97300F21CDC /* natural.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBF526BBD97300F21CDC /* natural.bundle */; };
-		866ACC2926BBD97300F21CDC /* pretty.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBF626BBD97300F21CDC /* pretty.bundle */; };
-		866ACC2A26BBD97300F21CDC /* temperament.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBF726BBD97300F21CDC /* temperament.bundle */; };
-		866ACC2B26BBD97300F21CDC /* scheming.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBF826BBD97300F21CDC /* scheming.bundle */; };
-		866ACC2C26BBD97300F21CDC /* Film-like.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBFA26BBD97300F21CDC /* Film-like.bundle */; };
-		866ACC2D26BBD97300F21CDC /* Night.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBFB26BBD97300F21CDC /* Night.bundle */; };
-		866ACC2E26BBD97300F21CDC /* Autumn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBFC26BBD97300F21CDC /* Autumn.bundle */; };
-		866ACC2F26BBD97300F21CDC /* Brighten.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBFD26BBD97300F21CDC /* Brighten.bundle */; };
-		866ACC3026BBD97300F21CDC /* Sunset.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBFE26BBD97300F21CDC /* Sunset.bundle */; };
-		866ACC3126BBD97300F21CDC /* Cool.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACBFF26BBD97300F21CDC /* Cool.bundle */; };
-		866ACC3226BBD97300F21CDC /* Fresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACC0026BBD97300F21CDC /* Fresh.bundle */; };
-		866ACC3326BBD97300F21CDC /* Sweet.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACC0126BBD97300F21CDC /* Sweet.bundle */; };
-		866ACC3426BBD97300F21CDC /* Cozily.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACC0226BBD97300F21CDC /* Cozily.bundle */; };
-		866ACC3526BBD97300F21CDC /* Creamy.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 866ACC0326BBD97300F21CDC /* Creamy.bundle */; };
+		867FB374283CFFE40011D5AA /* FaceDetectionModel.model in Resources */ = {isa = PBXBuildFile; fileRef = 867FB372283CFFE40011D5AA /* FaceDetectionModel.model */; };
+		867FB375283CFFE40011D5AA /* SegmentationModel.model in Resources */ = {isa = PBXBuildFile; fileRef = 867FB373283CFFE40011D5AA /* SegmentationModel.model */; };
+		867FB3B1283D00380011D5AA /* lipstickdir_rust_red.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB378283D00380011D5AA /* lipstickdir_rust_red.bundle */; };
+		867FB3B2283D00380011D5AA /* lipstickdir_bean_paste_pink.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB379283D00380011D5AA /* lipstickdir_bean_paste_pink.bundle */; };
+		867FB3B3283D00380011D5AA /* lipstickdir_coral.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB37A283D00380011D5AA /* lipstickdir_coral.bundle */; };
+		867FB3B4283D00380011D5AA /* lipstickdir_sweet_orange.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB37B283D00380011D5AA /* lipstickdir_sweet_orange.bundle */; };
+		867FB3B5283D00380011D5AA /* lipstickdir_velvet_red.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB37C283D00380011D5AA /* lipstickdir_velvet_red.bundle */; };
+		867FB3B6283D00380011D5AA /* eyeshadowdir_vitality_orange.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB37E283D00380011D5AA /* eyeshadowdir_vitality_orange.bundle */; };
+		867FB3B7283D00380011D5AA /* eyeshadowdir_shimmer_pink.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB37F283D00380011D5AA /* eyeshadowdir_shimmer_pink.bundle */; };
+		867FB3B8283D00380011D5AA /* eyeshadowdir_mist_pink.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB380283D00380011D5AA /* eyeshadowdir_mist_pink.bundle */; };
+		867FB3B9283D00380011D5AA /* eyeshadowdir_mocha_brown.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB381283D00380011D5AA /* eyeshadowdir_mocha_brown.bundle */; };
+		867FB3BA283D00380011D5AA /* eyeshadowdir_tea_brown.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB382283D00380011D5AA /* eyeshadowdir_tea_brown.bundle */; };
+		867FB3BB283D00380011D5AA /* makeupdir_flawless.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB384283D00380011D5AA /* makeupdir_flawless.bundle */; };
+		867FB3BC283D00380011D5AA /* makeupdir_cutie_and_cool.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB385283D00380011D5AA /* makeupdir_cutie_and_cool.bundle */; };
+		867FB3BD283D00380011D5AA /* makeupdir_pure_and_sexy.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB386283D00380011D5AA /* makeupdir_pure_and_sexy.bundle */; };
+		867FB3BE283D00380011D5AA /* makeupdir_milky_eyes.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB387283D00380011D5AA /* makeupdir_milky_eyes.bundle */; };
+		867FB3BF283D00380011D5AA /* makeupdir_vulnerable_and_innocenteyes.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB388283D00380011D5AA /* makeupdir_vulnerable_and_innocenteyes.bundle */; };
+		867FB3C0283D00380011D5AA /* coloredcontactsdir_chocolate_brown.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB38A283D00380011D5AA /* coloredcontactsdir_chocolate_brown.bundle */; };
+		867FB3C1283D00380011D5AA /* coloredcontactsdir_polar_lights_brown.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB38B283D00380011D5AA /* coloredcontactsdir_polar_lights_brown.bundle */; };
+		867FB3C2283D00380011D5AA /* coloredcontactsdir_mystery_brown_green.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB38C283D00380011D5AA /* coloredcontactsdir_mystery_brown_green.bundle */; };
+		867FB3C3283D00380011D5AA /* coloredcontactsdir_starry_blue.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB38D283D00380011D5AA /* coloredcontactsdir_starry_blue.bundle */; };
+		867FB3C4283D00380011D5AA /* coloredcontactsdir_darknight_black.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB38E283D00380011D5AA /* coloredcontactsdir_darknight_black.bundle */; };
+		867FB3C5283D00380011D5AA /* eyelashesdir_curl.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB390283D00380011D5AA /* eyelashesdir_curl.bundle */; };
+		867FB3C6283D00380011D5AA /* eyelashesdir_slender.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB391283D00380011D5AA /* eyelashesdir_slender.bundle */; };
+		867FB3C7283D00380011D5AA /* eyelashesdir_natural.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB392283D00380011D5AA /* eyelashesdir_natural.bundle */; };
+		867FB3C8283D00380011D5AA /* eyelashesdir_bushy.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB393283D00380011D5AA /* eyelashesdir_bushy.bundle */; };
+		867FB3C9283D00380011D5AA /* eyelashesdir_tender.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB394283D00380011D5AA /* eyelashesdir_tender.bundle */; };
+		867FB3CA283D00380011D5AA /* eyelinerdir_temperament.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB396283D00380011D5AA /* eyelinerdir_temperament.bundle */; };
+		867FB3CB283D00380011D5AA /* eyelinerdir_wildcat.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB397283D00380011D5AA /* eyelinerdir_wildcat.bundle */; };
+		867FB3CC283D00380011D5AA /* eyelinerdir_natural.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB398283D00380011D5AA /* eyelinerdir_natural.bundle */; };
+		867FB3CD283D00380011D5AA /* eyelinerdir_scheming.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB399283D00380011D5AA /* eyelinerdir_scheming.bundle */; };
+		867FB3CE283D00380011D5AA /* eyelinerdir_pretty.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB39A283D00380011D5AA /* eyelinerdir_pretty.bundle */; };
+		867FB3CF283D00380011D5AA /* blusherdir_sweet_orange.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB39C283D00380011D5AA /* blusherdir_sweet_orange.bundle */; };
+		867FB3D0283D00380011D5AA /* blusherdir_slightly_drunk.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB39D283D00380011D5AA /* blusherdir_slightly_drunk.bundle */; };
+		867FB3D1283D00380011D5AA /* blusherdir_apricot_pink.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB39E283D00380011D5AA /* blusherdir_apricot_pink.bundle */; };
+		867FB3D2283D00380011D5AA /* blusherdir_milk_orange.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB39F283D00380011D5AA /* blusherdir_milk_orange.bundle */; };
+		867FB3D3283D00380011D5AA /* blusherdir_peach.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB3A0283D00380011D5AA /* blusherdir_peach.bundle */; };
+		867FB3D4283D00380011D5AA /* CommonResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB3A1283D00380011D5AA /* CommonResources.bundle */; };
+		867FB3D5283D00380011D5AA /* Film-like.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB3A3283D00380011D5AA /* Film-like.bundle */; };
+		867FB3D6283D00380011D5AA /* Night.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB3A4283D00380011D5AA /* Night.bundle */; };
+		867FB3D7283D00380011D5AA /* Autumn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB3A5283D00380011D5AA /* Autumn.bundle */; };
+		867FB3D8283D00380011D5AA /* Brighten.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB3A6283D00380011D5AA /* Brighten.bundle */; };
+		867FB3D9283D00380011D5AA /* Sunset.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB3A7283D00380011D5AA /* Sunset.bundle */; };
+		867FB3DA283D00380011D5AA /* Cool.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB3A8283D00380011D5AA /* Cool.bundle */; };
+		867FB3DB283D00380011D5AA /* Fresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB3A9283D00380011D5AA /* Fresh.bundle */; };
+		867FB3DC283D00380011D5AA /* Sweet.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB3AA283D00380011D5AA /* Sweet.bundle */; };
+		867FB3DD283D00380011D5AA /* Cozily.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB3AB283D00380011D5AA /* Cozily.bundle */; };
+		867FB3DE283D00380011D5AA /* Creamy.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB3AC283D00380011D5AA /* Creamy.bundle */; };
+		867FB3DF283D00380011D5AA /* PendantResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB3AD283D00380011D5AA /* PendantResources.bundle */; };
+		867FB3E0283D00380011D5AA /* TeethWhiteningResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB3AE283D00380011D5AA /* TeethWhiteningResources.bundle */; };
+		867FB3E1283D00380011D5AA /* FaceWhiteningResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB3AF283D00380011D5AA /* FaceWhiteningResources.bundle */; };
+		867FB3E2283D00380011D5AA /* RosyResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB3B0283D00380011D5AA /* RosyResources.bundle */; };
+		867FB3EC283D08750011D5AA /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1787B989E9330E121BB234E /* Pods_Runner.framework */; };
+		867FB402283DD8B50011D5AA /* ZegoEffects.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867FB3F4283D0A8F0011D5AA /* ZegoEffects.xcframework */; };
+		867FB403283DD8B50011D5AA /* ZegoExpressEngine.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86B00F3A283CC79D00EB830A /* ZegoExpressEngine.xcframework */; };
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
 		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
 		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
-		B87AF770F31FE10F63F4825E /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1787B989E9330E121BB234E /* Pods_Runner.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		9705A1C41CF9048500538489 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneratedPluginRegistrant.h; sourceTree = "<group>"; };
@@ -86,54 +86,67 @@
 		74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runner-Bridging-Header.h"; sourceTree = "<group>"; };
 		74858FAE1ED2DC5600515810 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AFA3C8E1D35360C0083082E /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = Flutter/Release.xcconfig; sourceTree = "<group>"; };
-		866ACBC926BBD97300F21CDC /* SegmentationModel.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SegmentationModel.bundle; sourceTree = "<group>"; };
-		866ACBCA26BBD97300F21CDC /* FaceDetectionModel.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FaceDetectionModel.bundle; sourceTree = "<group>"; };
 		866ACBCC26BBD97300F21CDC /* pendantGirl.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = pendantGirl.bundle; sourceTree = "<group>"; };
 		866ACBCD26BBD97300F21CDC /* pendantFacefilm.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = pendantFacefilm.bundle; sourceTree = "<group>"; };
 		866ACBCE26BBD97300F21CDC /* pendantBaby.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = pendantBaby.bundle; sourceTree = "<group>"; };
-		866ACBCF26BBD97300F21CDC /* pendantXigua.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = pendantXigua.bundle; sourceTree = "<group>"; };
-		866ACBD026BBD97300F21CDC /* pendantRabbit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = pendantRabbit.bundle; sourceTree = "<group>"; };
 		866ACBD126BBD97300F21CDC /* pendantDive.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = pendantDive.bundle; sourceTree = "<group>"; };
 		866ACBD226BBD97300F21CDC /* pendantDeer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = pendantDeer.bundle; sourceTree = "<group>"; };
 		866ACBD326BBD97300F21CDC /* pendantClown.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = pendantClown.bundle; sourceTree = "<group>"; };
 		866ACBD426BBD97300F21CDC /* pendantAnimal.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = pendantAnimal.bundle; sourceTree = "<group>"; };
-		866ACBD626BBD97300F21CDC /* FaceWhiteningResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FaceWhiteningResources.bundle; sourceTree = "<group>"; };
-		866ACBD726BBD97300F21CDC /* TeethWhiteningResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TeethWhiteningResources.bundle; sourceTree = "<group>"; };
-		866ACBD826BBD97300F21CDC /* RosyResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RosyResources.bundle; sourceTree = "<group>"; };
-		866ACBD926BBD97300F21CDC /* PendantResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PendantResources.bundle; sourceTree = "<group>"; };
-		866ACBDC26BBD97300F21CDC /* vitality_orange.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = vitality_orange.bundle; sourceTree = "<group>"; };
-		866ACBDD26BBD97300F21CDC /* mocha_brown.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = mocha_brown.bundle; sourceTree = "<group>"; };
-		866ACBDE26BBD97300F21CDC /* shimmer_pink.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = shimmer_pink.bundle; sourceTree = "<group>"; };
-		866ACBDF26BBD97300F21CDC /* mist_pink.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = mist_pink.bundle; sourceTree = "<group>"; };
-		866ACBE026BBD97300F21CDC /* tea_brown.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = tea_brown.bundle; sourceTree = "<group>"; };
-		866ACBE226BBD97300F21CDC /* bean_paste_pink.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = bean_paste_pink.bundle; sourceTree = "<group>"; };
-		866ACBE326BBD97300F21CDC /* coral.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = coral.bundle; sourceTree = "<group>"; };
-		866ACBE426BBD97300F21CDC /* velvet_red.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = velvet_red.bundle; sourceTree = "<group>"; };
-		866ACBE626BBD97300F21CDC /* rust_red.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = rust_red.bundle; sourceTree = "<group>"; };
-		866ACBE926BBD97300F21CDC /* curl.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = curl.bundle; sourceTree = "<group>"; };
-		866ACBEA26BBD97300F21CDC /* tender.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = tender.bundle; sourceTree = "<group>"; };
-		866ACBEB26BBD97300F21CDC /* bushy.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = bushy.bundle; sourceTree = "<group>"; };
-		866ACBEC26BBD97300F21CDC /* slender.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = slender.bundle; sourceTree = "<group>"; };
-		866ACBEE26BBD97300F21CDC /* apricot_pink.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = apricot_pink.bundle; sourceTree = "<group>"; };
-		866ACBEF26BBD97300F21CDC /* peach.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = peach.bundle; sourceTree = "<group>"; };
-		866ACBF026BBD97300F21CDC /* sweet_orange.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = sweet_orange.bundle; sourceTree = "<group>"; };
-		866ACBF126BBD97300F21CDC /* slightly_drunk.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = slightly_drunk.bundle; sourceTree = "<group>"; };
-		866ACBF226BBD97300F21CDC /* milk_orange.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = milk_orange.bundle; sourceTree = "<group>"; };
-		866ACBF426BBD97300F21CDC /* wildcat.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = wildcat.bundle; sourceTree = "<group>"; };
-		866ACBF526BBD97300F21CDC /* natural.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = natural.bundle; sourceTree = "<group>"; };
-		866ACBF626BBD97300F21CDC /* pretty.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = pretty.bundle; sourceTree = "<group>"; };
-		866ACBF726BBD97300F21CDC /* temperament.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = temperament.bundle; sourceTree = "<group>"; };
-		866ACBF826BBD97300F21CDC /* scheming.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = scheming.bundle; sourceTree = "<group>"; };
-		866ACBFA26BBD97300F21CDC /* Film-like.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "Film-like.bundle"; sourceTree = "<group>"; };
-		866ACBFB26BBD97300F21CDC /* Night.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Night.bundle; sourceTree = "<group>"; };
-		866ACBFC26BBD97300F21CDC /* Autumn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Autumn.bundle; sourceTree = "<group>"; };
-		866ACBFD26BBD97300F21CDC /* Brighten.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Brighten.bundle; sourceTree = "<group>"; };
-		866ACBFE26BBD97300F21CDC /* Sunset.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Sunset.bundle; sourceTree = "<group>"; };
-		866ACBFF26BBD97300F21CDC /* Cool.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Cool.bundle; sourceTree = "<group>"; };
-		866ACC0026BBD97300F21CDC /* Fresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Fresh.bundle; sourceTree = "<group>"; };
-		866ACC0126BBD97300F21CDC /* Sweet.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Sweet.bundle; sourceTree = "<group>"; };
-		866ACC0226BBD97300F21CDC /* Cozily.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Cozily.bundle; sourceTree = "<group>"; };
-		866ACC0326BBD97300F21CDC /* Creamy.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Creamy.bundle; sourceTree = "<group>"; };
+		867FB372283CFFE40011D5AA /* FaceDetectionModel.model */ = {isa = PBXFileReference; lastKnownFileType = file; path = FaceDetectionModel.model; sourceTree = "<group>"; };
+		867FB373283CFFE40011D5AA /* SegmentationModel.model */ = {isa = PBXFileReference; lastKnownFileType = file; path = SegmentationModel.model; sourceTree = "<group>"; };
+		867FB378283D00380011D5AA /* lipstickdir_rust_red.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = lipstickdir_rust_red.bundle; sourceTree = "<group>"; };
+		867FB379283D00380011D5AA /* lipstickdir_bean_paste_pink.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = lipstickdir_bean_paste_pink.bundle; sourceTree = "<group>"; };
+		867FB37A283D00380011D5AA /* lipstickdir_coral.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = lipstickdir_coral.bundle; sourceTree = "<group>"; };
+		867FB37B283D00380011D5AA /* lipstickdir_sweet_orange.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = lipstickdir_sweet_orange.bundle; sourceTree = "<group>"; };
+		867FB37C283D00380011D5AA /* lipstickdir_velvet_red.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = lipstickdir_velvet_red.bundle; sourceTree = "<group>"; };
+		867FB37E283D00380011D5AA /* eyeshadowdir_vitality_orange.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = eyeshadowdir_vitality_orange.bundle; sourceTree = "<group>"; };
+		867FB37F283D00380011D5AA /* eyeshadowdir_shimmer_pink.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = eyeshadowdir_shimmer_pink.bundle; sourceTree = "<group>"; };
+		867FB380283D00380011D5AA /* eyeshadowdir_mist_pink.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = eyeshadowdir_mist_pink.bundle; sourceTree = "<group>"; };
+		867FB381283D00380011D5AA /* eyeshadowdir_mocha_brown.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = eyeshadowdir_mocha_brown.bundle; sourceTree = "<group>"; };
+		867FB382283D00380011D5AA /* eyeshadowdir_tea_brown.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = eyeshadowdir_tea_brown.bundle; sourceTree = "<group>"; };
+		867FB384283D00380011D5AA /* makeupdir_flawless.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = makeupdir_flawless.bundle; sourceTree = "<group>"; };
+		867FB385283D00380011D5AA /* makeupdir_cutie_and_cool.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = makeupdir_cutie_and_cool.bundle; sourceTree = "<group>"; };
+		867FB386283D00380011D5AA /* makeupdir_pure_and_sexy.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = makeupdir_pure_and_sexy.bundle; sourceTree = "<group>"; };
+		867FB387283D00380011D5AA /* makeupdir_milky_eyes.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = makeupdir_milky_eyes.bundle; sourceTree = "<group>"; };
+		867FB388283D00380011D5AA /* makeupdir_vulnerable_and_innocenteyes.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = makeupdir_vulnerable_and_innocenteyes.bundle; sourceTree = "<group>"; };
+		867FB38A283D00380011D5AA /* coloredcontactsdir_chocolate_brown.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = coloredcontactsdir_chocolate_brown.bundle; sourceTree = "<group>"; };
+		867FB38B283D00380011D5AA /* coloredcontactsdir_polar_lights_brown.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = coloredcontactsdir_polar_lights_brown.bundle; sourceTree = "<group>"; };
+		867FB38C283D00380011D5AA /* coloredcontactsdir_mystery_brown_green.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = coloredcontactsdir_mystery_brown_green.bundle; sourceTree = "<group>"; };
+		867FB38D283D00380011D5AA /* coloredcontactsdir_starry_blue.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = coloredcontactsdir_starry_blue.bundle; sourceTree = "<group>"; };
+		867FB38E283D00380011D5AA /* coloredcontactsdir_darknight_black.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = coloredcontactsdir_darknight_black.bundle; sourceTree = "<group>"; };
+		867FB390283D00380011D5AA /* eyelashesdir_curl.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = eyelashesdir_curl.bundle; sourceTree = "<group>"; };
+		867FB391283D00380011D5AA /* eyelashesdir_slender.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = eyelashesdir_slender.bundle; sourceTree = "<group>"; };
+		867FB392283D00380011D5AA /* eyelashesdir_natural.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = eyelashesdir_natural.bundle; sourceTree = "<group>"; };
+		867FB393283D00380011D5AA /* eyelashesdir_bushy.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = eyelashesdir_bushy.bundle; sourceTree = "<group>"; };
+		867FB394283D00380011D5AA /* eyelashesdir_tender.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = eyelashesdir_tender.bundle; sourceTree = "<group>"; };
+		867FB396283D00380011D5AA /* eyelinerdir_temperament.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = eyelinerdir_temperament.bundle; sourceTree = "<group>"; };
+		867FB397283D00380011D5AA /* eyelinerdir_wildcat.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = eyelinerdir_wildcat.bundle; sourceTree = "<group>"; };
+		867FB398283D00380011D5AA /* eyelinerdir_natural.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = eyelinerdir_natural.bundle; sourceTree = "<group>"; };
+		867FB399283D00380011D5AA /* eyelinerdir_scheming.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = eyelinerdir_scheming.bundle; sourceTree = "<group>"; };
+		867FB39A283D00380011D5AA /* eyelinerdir_pretty.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = eyelinerdir_pretty.bundle; sourceTree = "<group>"; };
+		867FB39C283D00380011D5AA /* blusherdir_sweet_orange.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = blusherdir_sweet_orange.bundle; sourceTree = "<group>"; };
+		867FB39D283D00380011D5AA /* blusherdir_slightly_drunk.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = blusherdir_slightly_drunk.bundle; sourceTree = "<group>"; };
+		867FB39E283D00380011D5AA /* blusherdir_apricot_pink.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = blusherdir_apricot_pink.bundle; sourceTree = "<group>"; };
+		867FB39F283D00380011D5AA /* blusherdir_milk_orange.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = blusherdir_milk_orange.bundle; sourceTree = "<group>"; };
+		867FB3A0283D00380011D5AA /* blusherdir_peach.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = blusherdir_peach.bundle; sourceTree = "<group>"; };
+		867FB3A1283D00380011D5AA /* CommonResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CommonResources.bundle; sourceTree = "<group>"; };
+		867FB3A3283D00380011D5AA /* Film-like.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "Film-like.bundle"; sourceTree = "<group>"; };
+		867FB3A4283D00380011D5AA /* Night.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Night.bundle; sourceTree = "<group>"; };
+		867FB3A5283D00380011D5AA /* Autumn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Autumn.bundle; sourceTree = "<group>"; };
+		867FB3A6283D00380011D5AA /* Brighten.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Brighten.bundle; sourceTree = "<group>"; };
+		867FB3A7283D00380011D5AA /* Sunset.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Sunset.bundle; sourceTree = "<group>"; };
+		867FB3A8283D00380011D5AA /* Cool.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Cool.bundle; sourceTree = "<group>"; };
+		867FB3A9283D00380011D5AA /* Fresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Fresh.bundle; sourceTree = "<group>"; };
+		867FB3AA283D00380011D5AA /* Sweet.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Sweet.bundle; sourceTree = "<group>"; };
+		867FB3AB283D00380011D5AA /* Cozily.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Cozily.bundle; sourceTree = "<group>"; };
+		867FB3AC283D00380011D5AA /* Creamy.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Creamy.bundle; sourceTree = "<group>"; };
+		867FB3AD283D00380011D5AA /* PendantResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PendantResources.bundle; sourceTree = "<group>"; };
+		867FB3AE283D00380011D5AA /* TeethWhiteningResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TeethWhiteningResources.bundle; sourceTree = "<group>"; };
+		867FB3AF283D00380011D5AA /* FaceWhiteningResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FaceWhiteningResources.bundle; sourceTree = "<group>"; };
+		867FB3B0283D00380011D5AA /* RosyResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RosyResources.bundle; sourceTree = "<group>"; };
+		867FB3F4283D0A8F0011D5AA /* ZegoEffects.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ZegoEffects.xcframework; path = .symlinks/plugins/zego_effects_plugin/ios/../../../../../../ios/ZegoEffects.xcframework; sourceTree = "<group>"; };
+		86B00F3A283CC79D00EB830A /* ZegoExpressEngine.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ZegoExpressEngine.xcframework; path = Pods/ZegoExpressEngine/Video/iOS/ZegoExpressEngine.xcframework; sourceTree = "<group>"; };
 		9740EEB21CF90195004384FC /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Debug.xcconfig; path = Flutter/Debug.xcconfig; sourceTree = "<group>"; };
 		9740EEB31CF90195004384FC /* Generated.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Generated.xcconfig; path = Flutter/Generated.xcconfig; sourceTree = "<group>"; };
 		97C146EE1CF9000F007C117D /* Runner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runner.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,7 +163,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B87AF770F31FE10F63F4825E /* Pods_Runner.framework in Frameworks */,
+				867FB402283DD8B50011D5AA /* ZegoEffects.xcframework in Frameworks */,
+				867FB403283DD8B50011D5AA /* ZegoExpressEngine.xcframework in Frameworks */,
+				867FB3EC283D08750011D5AA /* Pods_Runner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,8 +195,8 @@
 		866ACBC826BBD97300F21CDC /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				866ACBC926BBD97300F21CDC /* SegmentationModel.bundle */,
-				866ACBCA26BBD97300F21CDC /* FaceDetectionModel.bundle */,
+				867FB372283CFFE40011D5AA /* FaceDetectionModel.model */,
+				867FB373283CFFE40011D5AA /* SegmentationModel.model */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -192,8 +207,6 @@
 				866ACBCC26BBD97300F21CDC /* pendantGirl.bundle */,
 				866ACBCD26BBD97300F21CDC /* pendantFacefilm.bundle */,
 				866ACBCE26BBD97300F21CDC /* pendantBaby.bundle */,
-				866ACBCF26BBD97300F21CDC /* pendantXigua.bundle */,
-				866ACBD026BBD97300F21CDC /* pendantRabbit.bundle */,
 				866ACBD126BBD97300F21CDC /* pendantDive.bundle */,
 				866ACBD226BBD97300F21CDC /* pendantDeer.bundle */,
 				866ACBD326BBD97300F21CDC /* pendantClown.bundle */,
@@ -205,101 +218,130 @@
 		866ACBD526BBD97300F21CDC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				866ACBD626BBD97300F21CDC /* FaceWhiteningResources.bundle */,
-				866ACBD726BBD97300F21CDC /* TeethWhiteningResources.bundle */,
-				866ACBD826BBD97300F21CDC /* RosyResources.bundle */,
-				866ACBD926BBD97300F21CDC /* PendantResources.bundle */,
-				866ACBDA26BBD97300F21CDC /* FilterType_Beautiful_Makeup */,
-				866ACBF926BBD97300F21CDC /* FilterType_Colorful_Style */,
+				867FB3A2283D00380011D5AA /* ColorfulStyleResources */,
+				867FB3A1283D00380011D5AA /* CommonResources.bundle */,
+				867FB3AF283D00380011D5AA /* FaceWhiteningResources.bundle */,
+				867FB376283D00380011D5AA /* MakeupResources */,
+				867FB3AD283D00380011D5AA /* PendantResources.bundle */,
+				867FB3B0283D00380011D5AA /* RosyResources.bundle */,
+				867FB3AE283D00380011D5AA /* TeethWhiteningResources.bundle */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		866ACBDA26BBD97300F21CDC /* FilterType_Beautiful_Makeup */ = {
+		867FB376283D00380011D5AA /* MakeupResources */ = {
 			isa = PBXGroup;
 			children = (
-				866ACBDB26BBD97300F21CDC /* eyeshadowdir */,
-				866ACBE126BBD97300F21CDC /* lipdir */,
-				866ACBE726BBD97300F21CDC /* eyelashdir */,
-				866ACBED26BBD97300F21CDC /* cheekdir */,
-				866ACBF326BBD97300F21CDC /* eyelinerdir */,
+				867FB377283D00380011D5AA /* lipstickdir */,
+				867FB37D283D00380011D5AA /* eyeshadowdir */,
+				867FB383283D00380011D5AA /* makeupdir */,
+				867FB389283D00380011D5AA /* coloredcontactsdir */,
+				867FB38F283D00380011D5AA /* eyelashesdir */,
+				867FB395283D00380011D5AA /* eyelinerdir */,
+				867FB39B283D00380011D5AA /* blusherdir */,
 			);
-			path = FilterType_Beautiful_Makeup;
+			path = MakeupResources;
 			sourceTree = "<group>";
 		};
-		866ACBDB26BBD97300F21CDC /* eyeshadowdir */ = {
+		867FB377283D00380011D5AA /* lipstickdir */ = {
 			isa = PBXGroup;
 			children = (
-				866ACBDC26BBD97300F21CDC /* vitality_orange.bundle */,
-				866ACBDD26BBD97300F21CDC /* mocha_brown.bundle */,
-				866ACBDE26BBD97300F21CDC /* shimmer_pink.bundle */,
-				866ACBDF26BBD97300F21CDC /* mist_pink.bundle */,
-				866ACBE026BBD97300F21CDC /* tea_brown.bundle */,
+				867FB378283D00380011D5AA /* lipstickdir_rust_red.bundle */,
+				867FB379283D00380011D5AA /* lipstickdir_bean_paste_pink.bundle */,
+				867FB37A283D00380011D5AA /* lipstickdir_coral.bundle */,
+				867FB37B283D00380011D5AA /* lipstickdir_sweet_orange.bundle */,
+				867FB37C283D00380011D5AA /* lipstickdir_velvet_red.bundle */,
+			);
+			path = lipstickdir;
+			sourceTree = "<group>";
+		};
+		867FB37D283D00380011D5AA /* eyeshadowdir */ = {
+			isa = PBXGroup;
+			children = (
+				867FB37E283D00380011D5AA /* eyeshadowdir_vitality_orange.bundle */,
+				867FB37F283D00380011D5AA /* eyeshadowdir_shimmer_pink.bundle */,
+				867FB380283D00380011D5AA /* eyeshadowdir_mist_pink.bundle */,
+				867FB381283D00380011D5AA /* eyeshadowdir_mocha_brown.bundle */,
+				867FB382283D00380011D5AA /* eyeshadowdir_tea_brown.bundle */,
 			);
 			path = eyeshadowdir;
 			sourceTree = "<group>";
 		};
-		866ACBE126BBD97300F21CDC /* lipdir */ = {
+		867FB383283D00380011D5AA /* makeupdir */ = {
 			isa = PBXGroup;
 			children = (
-				866ACBE226BBD97300F21CDC /* bean_paste_pink.bundle */,
-				866ACBE326BBD97300F21CDC /* coral.bundle */,
-				866ACBE426BBD97300F21CDC /* velvet_red.bundle */,
-				866ACBE626BBD97300F21CDC /* rust_red.bundle */,
+				867FB384283D00380011D5AA /* makeupdir_flawless.bundle */,
+				867FB385283D00380011D5AA /* makeupdir_cutie_and_cool.bundle */,
+				867FB386283D00380011D5AA /* makeupdir_pure_and_sexy.bundle */,
+				867FB387283D00380011D5AA /* makeupdir_milky_eyes.bundle */,
+				867FB388283D00380011D5AA /* makeupdir_vulnerable_and_innocenteyes.bundle */,
 			);
-			path = lipdir;
+			path = makeupdir;
 			sourceTree = "<group>";
 		};
-		866ACBE726BBD97300F21CDC /* eyelashdir */ = {
+		867FB389283D00380011D5AA /* coloredcontactsdir */ = {
 			isa = PBXGroup;
 			children = (
-				866ACBE926BBD97300F21CDC /* curl.bundle */,
-				866ACBEA26BBD97300F21CDC /* tender.bundle */,
-				866ACBEB26BBD97300F21CDC /* bushy.bundle */,
-				866ACBEC26BBD97300F21CDC /* slender.bundle */,
+				867FB38A283D00380011D5AA /* coloredcontactsdir_chocolate_brown.bundle */,
+				867FB38B283D00380011D5AA /* coloredcontactsdir_polar_lights_brown.bundle */,
+				867FB38C283D00380011D5AA /* coloredcontactsdir_mystery_brown_green.bundle */,
+				867FB38D283D00380011D5AA /* coloredcontactsdir_starry_blue.bundle */,
+				867FB38E283D00380011D5AA /* coloredcontactsdir_darknight_black.bundle */,
 			);
-			path = eyelashdir;
+			path = coloredcontactsdir;
 			sourceTree = "<group>";
 		};
-		866ACBED26BBD97300F21CDC /* cheekdir */ = {
+		867FB38F283D00380011D5AA /* eyelashesdir */ = {
 			isa = PBXGroup;
 			children = (
-				866ACBEE26BBD97300F21CDC /* apricot_pink.bundle */,
-				866ACBEF26BBD97300F21CDC /* peach.bundle */,
-				866ACBF026BBD97300F21CDC /* sweet_orange.bundle */,
-				866ACBF126BBD97300F21CDC /* slightly_drunk.bundle */,
-				866ACBF226BBD97300F21CDC /* milk_orange.bundle */,
+				867FB390283D00380011D5AA /* eyelashesdir_curl.bundle */,
+				867FB391283D00380011D5AA /* eyelashesdir_slender.bundle */,
+				867FB392283D00380011D5AA /* eyelashesdir_natural.bundle */,
+				867FB393283D00380011D5AA /* eyelashesdir_bushy.bundle */,
+				867FB394283D00380011D5AA /* eyelashesdir_tender.bundle */,
 			);
-			path = cheekdir;
+			path = eyelashesdir;
 			sourceTree = "<group>";
 		};
-		866ACBF326BBD97300F21CDC /* eyelinerdir */ = {
+		867FB395283D00380011D5AA /* eyelinerdir */ = {
 			isa = PBXGroup;
 			children = (
-				866ACBF426BBD97300F21CDC /* wildcat.bundle */,
-				866ACBF526BBD97300F21CDC /* natural.bundle */,
-				866ACBF626BBD97300F21CDC /* pretty.bundle */,
-				866ACBF726BBD97300F21CDC /* temperament.bundle */,
-				866ACBF826BBD97300F21CDC /* scheming.bundle */,
+				867FB396283D00380011D5AA /* eyelinerdir_temperament.bundle */,
+				867FB397283D00380011D5AA /* eyelinerdir_wildcat.bundle */,
+				867FB398283D00380011D5AA /* eyelinerdir_natural.bundle */,
+				867FB399283D00380011D5AA /* eyelinerdir_scheming.bundle */,
+				867FB39A283D00380011D5AA /* eyelinerdir_pretty.bundle */,
 			);
 			path = eyelinerdir;
 			sourceTree = "<group>";
 		};
-		866ACBF926BBD97300F21CDC /* FilterType_Colorful_Style */ = {
+		867FB39B283D00380011D5AA /* blusherdir */ = {
 			isa = PBXGroup;
 			children = (
-				866ACBFA26BBD97300F21CDC /* Film-like.bundle */,
-				866ACBFB26BBD97300F21CDC /* Night.bundle */,
-				866ACBFC26BBD97300F21CDC /* Autumn.bundle */,
-				866ACBFD26BBD97300F21CDC /* Brighten.bundle */,
-				866ACBFE26BBD97300F21CDC /* Sunset.bundle */,
-				866ACBFF26BBD97300F21CDC /* Cool.bundle */,
-				866ACC0026BBD97300F21CDC /* Fresh.bundle */,
-				866ACC0126BBD97300F21CDC /* Sweet.bundle */,
-				866ACC0226BBD97300F21CDC /* Cozily.bundle */,
-				866ACC0326BBD97300F21CDC /* Creamy.bundle */,
+				867FB39C283D00380011D5AA /* blusherdir_sweet_orange.bundle */,
+				867FB39D283D00380011D5AA /* blusherdir_slightly_drunk.bundle */,
+				867FB39E283D00380011D5AA /* blusherdir_apricot_pink.bundle */,
+				867FB39F283D00380011D5AA /* blusherdir_milk_orange.bundle */,
+				867FB3A0283D00380011D5AA /* blusherdir_peach.bundle */,
 			);
-			path = FilterType_Colorful_Style;
+			path = blusherdir;
+			sourceTree = "<group>";
+		};
+		867FB3A2283D00380011D5AA /* ColorfulStyleResources */ = {
+			isa = PBXGroup;
+			children = (
+				867FB3A3283D00380011D5AA /* Film-like.bundle */,
+				867FB3A4283D00380011D5AA /* Night.bundle */,
+				867FB3A5283D00380011D5AA /* Autumn.bundle */,
+				867FB3A6283D00380011D5AA /* Brighten.bundle */,
+				867FB3A7283D00380011D5AA /* Sunset.bundle */,
+				867FB3A8283D00380011D5AA /* Cool.bundle */,
+				867FB3A9283D00380011D5AA /* Fresh.bundle */,
+				867FB3AA283D00380011D5AA /* Sweet.bundle */,
+				867FB3AB283D00380011D5AA /* Cozily.bundle */,
+				867FB3AC283D00380011D5AA /* Creamy.bundle */,
+			);
+			path = ColorfulStyleResources;
 			sourceTree = "<group>";
 		};
 		9740EEB11CF90186004384FC /* Flutter */ = {
@@ -351,6 +393,8 @@
 		F068E6A1DD6D3586794C7E4B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				867FB3F4283D0A8F0011D5AA /* ZegoEffects.xcframework */,
+				86B00F3A283CC79D00EB830A /* ZegoExpressEngine.xcframework */,
 				F1787B989E9330E121BB234E /* Pods_Runner.framework */,
 			);
 			name = Frameworks;
@@ -368,7 +412,6 @@
 				97C146EA1CF9000F007C117D /* Sources */,
 				97C146EB1CF9000F007C117D /* Frameworks */,
 				97C146EC1CF9000F007C117D /* Resources */,
-				9705A1C41CF9048500538489 /* Embed Frameworks */,
 				3B06AD1E1E4923F5004D2608 /* Thin Binary */,
 				6CF23BFDB4C7B6CB1474B9A9 /* [CP] Embed Pods Frameworks */,
 			);
@@ -387,7 +430,7 @@
 		97C146E61CF9000F007C117D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1300;
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					97C146ED1CF9000F007C117D = {
@@ -419,58 +462,69 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				866ACC2526BBD97300F21CDC /* slightly_drunk.bundle in Resources */,
-				866ACC0A26BBD97300F21CDC /* pendantRabbit.bundle in Resources */,
-				866ACC1926BBD97300F21CDC /* coral.bundle in Resources */,
-				866ACC2E26BBD97300F21CDC /* Autumn.bundle in Resources */,
-				866ACC0526BBD97300F21CDC /* FaceDetectionModel.bundle in Resources */,
+				867FB3B4283D00380011D5AA /* lipstickdir_sweet_orange.bundle in Resources */,
+				867FB3E2283D00380011D5AA /* RosyResources.bundle in Resources */,
+				867FB3CE283D00380011D5AA /* eyelinerdir_pretty.bundle in Resources */,
+				867FB3E1283D00380011D5AA /* FaceWhiteningResources.bundle in Resources */,
+				867FB3E0283D00380011D5AA /* TeethWhiteningResources.bundle in Resources */,
+				867FB3D1283D00380011D5AA /* blusherdir_apricot_pink.bundle in Resources */,
+				867FB3B8283D00380011D5AA /* eyeshadowdir_mist_pink.bundle in Resources */,
 				866ACC0726BBD97300F21CDC /* pendantFacefilm.bundle in Resources */,
 				866ACC0626BBD97300F21CDC /* pendantGirl.bundle in Resources */,
+				867FB3D0283D00380011D5AA /* blusherdir_slightly_drunk.bundle in Resources */,
+				867FB3B3283D00380011D5AA /* lipstickdir_coral.bundle in Resources */,
+				867FB3CB283D00380011D5AA /* eyelinerdir_wildcat.bundle in Resources */,
+				867FB3D4283D00380011D5AA /* CommonResources.bundle in Resources */,
+				867FB3B5283D00380011D5AA /* lipstickdir_velvet_red.bundle in Resources */,
+				867FB3C1283D00380011D5AA /* coloredcontactsdir_polar_lights_brown.bundle in Resources */,
+				867FB3BC283D00380011D5AA /* makeupdir_cutie_and_cool.bundle in Resources */,
 				866ACC0B26BBD97300F21CDC /* pendantDive.bundle in Resources */,
-				866ACC2B26BBD97300F21CDC /* scheming.bundle in Resources */,
-				866ACC2226BBD97300F21CDC /* apricot_pink.bundle in Resources */,
-				866ACC2626BBD97300F21CDC /* milk_orange.bundle in Resources */,
-				866ACC0926BBD97300F21CDC /* pendantXigua.bundle in Resources */,
-				866ACC3326BBD97300F21CDC /* Sweet.bundle in Resources */,
-				866ACC2C26BBD97300F21CDC /* Film-like.bundle in Resources */,
-				866ACC1326BBD97300F21CDC /* vitality_orange.bundle in Resources */,
-				866ACC2D26BBD97300F21CDC /* Night.bundle in Resources */,
-				866ACC1626BBD97300F21CDC /* mist_pink.bundle in Resources */,
-				866ACC3426BBD97300F21CDC /* Cozily.bundle in Resources */,
-				866ACC0426BBD97300F21CDC /* SegmentationModel.bundle in Resources */,
+				867FB3C5283D00380011D5AA /* eyelashesdir_curl.bundle in Resources */,
+				867FB3D7283D00380011D5AA /* Autumn.bundle in Resources */,
 				866ACC0D26BBD97300F21CDC /* pendantClown.bundle in Resources */,
-				866ACC2326BBD97300F21CDC /* peach.bundle in Resources */,
-				866ACC1426BBD97300F21CDC /* mocha_brown.bundle in Resources */,
-				866ACC1C26BBD97300F21CDC /* rust_red.bundle in Resources */,
-				866ACC2026BBD97300F21CDC /* bushy.bundle in Resources */,
+				867FB3C7283D00380011D5AA /* eyelashesdir_natural.bundle in Resources */,
+				867FB3B6283D00380011D5AA /* eyeshadowdir_vitality_orange.bundle in Resources */,
+				867FB3C0283D00380011D5AA /* coloredcontactsdir_chocolate_brown.bundle in Resources */,
+				867FB3CC283D00380011D5AA /* eyelinerdir_natural.bundle in Resources */,
 				97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */,
 				866ACC0826BBD97300F21CDC /* pendantBaby.bundle in Resources */,
-				866ACC1A26BBD97300F21CDC /* velvet_red.bundle in Resources */,
-				866ACC3526BBD97300F21CDC /* Creamy.bundle in Resources */,
-				866ACC2426BBD97300F21CDC /* sweet_orange.bundle in Resources */,
-				866ACC1826BBD97300F21CDC /* bean_paste_pink.bundle in Resources */,
+				867FB3BE283D00380011D5AA /* makeupdir_milky_eyes.bundle in Resources */,
+				867FB3B9283D00380011D5AA /* eyeshadowdir_mocha_brown.bundle in Resources */,
+				867FB3D9283D00380011D5AA /* Sunset.bundle in Resources */,
+				867FB3B7283D00380011D5AA /* eyeshadowdir_shimmer_pink.bundle in Resources */,
 				3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */,
-				866ACC1726BBD97300F21CDC /* tea_brown.bundle in Resources */,
-				866ACC3126BBD97300F21CDC /* Cool.bundle in Resources */,
-				866ACC3226BBD97300F21CDC /* Fresh.bundle in Resources */,
-				866ACC1126BBD97300F21CDC /* RosyResources.bundle in Resources */,
-				866ACC2926BBD97300F21CDC /* pretty.bundle in Resources */,
-				866ACC1F26BBD97300F21CDC /* tender.bundle in Resources */,
-				866ACC1E26BBD97300F21CDC /* curl.bundle in Resources */,
+				867FB3C8283D00380011D5AA /* eyelashesdir_bushy.bundle in Resources */,
+				867FB3BD283D00380011D5AA /* makeupdir_pure_and_sexy.bundle in Resources */,
+				867FB3BA283D00380011D5AA /* eyeshadowdir_tea_brown.bundle in Resources */,
+				867FB3DD283D00380011D5AA /* Cozily.bundle in Resources */,
+				867FB3BF283D00380011D5AA /* makeupdir_vulnerable_and_innocenteyes.bundle in Resources */,
 				866ACC0E26BBD97300F21CDC /* pendantAnimal.bundle in Resources */,
-				866ACC1526BBD97300F21CDC /* shimmer_pink.bundle in Resources */,
-				866ACC2A26BBD97300F21CDC /* temperament.bundle in Resources */,
-				866ACC1026BBD97300F21CDC /* TeethWhiteningResources.bundle in Resources */,
+				867FB3DC283D00380011D5AA /* Sweet.bundle in Resources */,
+				867FB374283CFFE40011D5AA /* FaceDetectionModel.model in Resources */,
+				867FB3DA283D00380011D5AA /* Cool.bundle in Resources */,
+				867FB3CD283D00380011D5AA /* eyelinerdir_scheming.bundle in Resources */,
+				867FB3D8283D00380011D5AA /* Brighten.bundle in Resources */,
+				867FB3C4283D00380011D5AA /* coloredcontactsdir_darknight_black.bundle in Resources */,
 				866ACC0C26BBD97300F21CDC /* pendantDeer.bundle in Resources */,
-				866ACC2F26BBD97300F21CDC /* Brighten.bundle in Resources */,
-				866ACC3026BBD97300F21CDC /* Sunset.bundle in Resources */,
+				867FB3B1283D00380011D5AA /* lipstickdir_rust_red.bundle in Resources */,
+				867FB3D3283D00380011D5AA /* blusherdir_peach.bundle in Resources */,
+				867FB3D2283D00380011D5AA /* blusherdir_milk_orange.bundle in Resources */,
+				867FB3BB283D00380011D5AA /* makeupdir_flawless.bundle in Resources */,
+				867FB3B2283D00380011D5AA /* lipstickdir_bean_paste_pink.bundle in Resources */,
+				867FB3D5283D00380011D5AA /* Film-like.bundle in Resources */,
+				867FB3D6283D00380011D5AA /* Night.bundle in Resources */,
+				867FB3DF283D00380011D5AA /* PendantResources.bundle in Resources */,
+				867FB3CA283D00380011D5AA /* eyelinerdir_temperament.bundle in Resources */,
+				867FB3C2283D00380011D5AA /* coloredcontactsdir_mystery_brown_green.bundle in Resources */,
 				97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */,
-				866ACC2826BBD97300F21CDC /* natural.bundle in Resources */,
-				866ACC1226BBD97300F21CDC /* PendantResources.bundle in Resources */,
-				866ACC2726BBD97300F21CDC /* wildcat.bundle in Resources */,
-				866ACC0F26BBD97300F21CDC /* FaceWhiteningResources.bundle in Resources */,
 				97C146FC1CF9000F007C117D /* Main.storyboard in Resources */,
-				866ACC2126BBD97300F21CDC /* slender.bundle in Resources */,
+				867FB3C3283D00380011D5AA /* coloredcontactsdir_starry_blue.bundle in Resources */,
+				867FB3CF283D00380011D5AA /* blusherdir_sweet_orange.bundle in Resources */,
+				867FB3DE283D00380011D5AA /* Creamy.bundle in Resources */,
+				867FB3DB283D00380011D5AA /* Fresh.bundle in Resources */,
+				867FB375283CFFE40011D5AA /* SegmentationModel.model in Resources */,
+				867FB3C6283D00380011D5AA /* eyelashesdir_slender.bundle in Resources */,
+				867FB3C9283D00380011D5AA /* eyelashesdir_tender.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,7 +543,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" embed_and_thin";
+			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" embed_and_thin\n";
 		};
 		6CF23BFDB4C7B6CB1474B9A9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -520,7 +574,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" build";
+			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" build\n";
 		};
 		F02DD96EF50E02EAA1A0DB78 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -633,14 +687,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
-				DEVELOPMENT_TEAM = Y98YBP7T6D;
+				DEVELOPMENT_TEAM = B82BHJ5H89;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
+					"\"$(SRCROOT)/Pods\"/**",
 				);
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -648,13 +705,16 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Flutter",
+					"$(inherited)/**",
+					"$(PROJECT_DIR)/Flutter/**",
+					"\"$(SRCROOT)/Pods\"/**",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.topclass.audiolive;
+				OTHER_CODE_SIGN_FLAGS = "--generate-entitlement-der";
+				PRODUCT_BUNDLE_IDENTIFIER = fun.live247.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Profile;
@@ -772,14 +832,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
-				DEVELOPMENT_TEAM = Y98YBP7T6D;
+				DEVELOPMENT_TEAM = B82BHJ5H89;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
+					"\"$(SRCROOT)/Pods\"/**",
 				);
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -787,14 +850,17 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Flutter",
+					"$(inherited)/**",
+					"$(PROJECT_DIR)/Flutter/**",
+					"\"$(SRCROOT)/Pods\"/**",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.topclass.audiolive;
+				OTHER_CODE_SIGN_FLAGS = "--generate-entitlement-der";
+				PRODUCT_BUNDLE_IDENTIFIER = fun.live247.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -803,14 +869,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
-				DEVELOPMENT_TEAM = Y98YBP7T6D;
+				DEVELOPMENT_TEAM = B82BHJ5H89;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
+					"\"$(SRCROOT)/Pods\"/**",
 				);
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -818,13 +887,16 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Flutter",
+					"$(inherited)/**",
+					"$(PROJECT_DIR)/Flutter/**",
+					"\"$(SRCROOT)/Pods\"/**",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.topclass.audiolive;
+				OTHER_CODE_SIGN_FLAGS = "--generate-entitlement-der";
+				PRODUCT_BUNDLE_IDENTIFIER = fun.live247.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;

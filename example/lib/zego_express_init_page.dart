@@ -23,10 +23,17 @@ class _ExpressInitPageState extends State<ExpressInitPage> {
   @override
   void initState() {
     super.initState();
+
+    // if (ZegoConfig.instance.appID>0) {
+    _appIDEdController.text = ZegoConfig.instance.appID.toString();
+    // }
+
+    // if (ZegoConfig.instance.appSign.isNotEmpty) {
+    _appSignEdController.text = ZegoConfig.instance.appSign;
+    // }
+
     ZegoExpressEngine.getVersion().then((version) {
       print('[SDK Version] $version');
-      _appIDEdController.text = ZegoConfig.instance.appID.toString();
-      _appSignEdController.text = ZegoConfig.instance.appSign;
       setState(() => _version = version);
     });
   }

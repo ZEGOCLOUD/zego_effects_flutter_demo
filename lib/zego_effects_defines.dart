@@ -27,8 +27,29 @@ class ZegoEffectsSmoothParam {
   int intensity;
 }
 
-class ZegoEffectsBigEyesParam {
-  /// Big eyes intensity, 0-100
+class ZegoEffectsMandibleSlimmingParam {
+  /// Mandible slimming intensity, 0-100
+  int intensity;
+}
+
+class ZegoEffectsCheekboneSlimmingParam {
+  /// Cheekbone slimming intensity, 0-100
+  int intensity;
+}
+
+class ZegoEffectsFaceShorteningParam {
+  /// Face shortening intensity, 0-100
+  int intensity;
+}
+
+
+class ZegoEffectsForeheadShorteningParam {
+  /// Forehead shortening intensity, -100~100
+  int intensity;
+}
+
+class ZegoEffectsNoseLengtheningParam {
+  /// Nose lengthening intensity, -100~100
   int intensity;
 }
 
@@ -82,10 +103,62 @@ class ZegoEffectsFaceLiftingParam {
   int intensity;
 }
 
+class ZegoEffectsWrinklesRemovingParam {
+  /// Wrinkles removing intensity, 0-100
+  int intensity;
+}
+
+class ZegoEffectsDarkCirclesRemovingParam {
+  /// Darkcircles removing intensity, 0-100
+  int intensity;
+}
+
+class ZegoEffectsBigEyesParam {
+  /// big eyes intensity, 0-100
+  int intensity;
+}
+
+
 class ZegoEffectsBlurParam {
   /// Face lifting intensity, 0-100
   int intensity;
 }
+
+class ZegoEffectsEyelinerParam {
+  /// eyeliner intensity, 0-100
+  int intensity;
+}
+
+class ZegoEffectsEyeshadowParam {
+  /// eyeshadow intensity, 0-100
+  int intensity;
+}
+
+class ZegoEffectsEyelashesParam {
+  /// eyelashed intensity, 0-100
+  int intensity;
+}
+
+class ZegoEffectsBlusherParam {
+  /// blusher intensity, 0-100
+  int intensity;
+}
+
+class ZegoEffectsLipstickParam {
+  /// lipstick intensity, 0-100
+  int intensity;
+}
+
+class ZegoEffectsColoredcontactsParam {
+  /// color contacts intensity, 0-100
+  int intensity;
+}
+
+class ZegoEffectsMakeupParam {
+  /// makeup intensity, 0-100
+  int intensity;
+}
+
 
 /// Object for video frame fieldeter.
 /// Including video frame format, width and height, etc.

@@ -4,5 +4,13 @@ Demonstrates how to use the zego_effects_plugin plugin.
 
 ## Getting Started
 
-Run the configuration script with the `./configure.sh` command. And fill in the AppID and ServerSecret, which can be obtained in the [ZEGO Admin Console\|_blank](https://console.zego.im/).
-**Note**: If you are using Windows system, double-click the `configure.bat` to run the configuration script.
+This project is a starting point for a Flutter application.
+
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+
+For help getting started with Flutter, view our
+[online documentation](https://flutter.dev/docs), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.

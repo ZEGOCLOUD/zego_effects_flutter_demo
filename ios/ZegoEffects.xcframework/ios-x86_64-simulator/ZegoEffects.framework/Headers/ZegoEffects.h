@@ -19,6 +19,14 @@ NS_ASSUME_NONNULL_BEGIN
 /// @return SDK 版本号
 + (NSString *)getVersion;
 
+/// 获取授权信息
+///
+/// 在线鉴权时须向服务器发送授权信息,通过此接口获取。
+///
+///
+
++ (NSString *)getAuthInfo:(NSString *)appSign;
+
 /// effects 高级功能开关，如不设置，默认不使用特殊功能。使用前请联系 ZEGO 技术支持。
 ///
 /// 调用时机：初始化 SDK 之前
@@ -35,6 +43,14 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param resourceInfoList 资源列表
 + (void)setResources:(nullable NSArray<NSString *> *)resourceInfoList;
 
+/// 设置 AI 模型，支持同时设置多个模型
+///
+/// 详情描述：如果开发者需要使用到一些高级功能，人脸检测，人像分割等，就需要通过该接口设置 AI 模型，否则 AI 模型相关的功能将无法正常使用。
+/// 调用时机/通知时机：全局生效，必须在创建 Effects 实例前设置。
+///
+/// @param modelInfoList ai模型路径
++ (void)setModels:(NSArray<NSString *> *)modelInfoList DEPRECATED_ATTRIBUTE;
+
 /// 创建 Effects 实例
 ///
 /// 在调用其他函数前需要先创建并初始化 Effects 实例；SDK 支持创建多个 ZegoEffects 实例
@@ -47,12 +63,12 @@ NS_ASSUME_NONNULL_BEGIN
 /// 用于释放 SDK 使用的资源。
 - (void)destroy;
 
-/// 设置事件通知回调，传 [nil] 则清空已设置的回调
+/// 设置事件通知回调，传 [nil] 则清空已设置的回调。
 ///
 /// @param eventHandler 事件通知回调。开发者应根据自身业务场景，重写回调的相关方法以关注特定的通知。SDK 主要的回调方法都在 [ZegoEffectsEventHandler] 里。
 - (ZegoEffects *)setEventHandler:(nullable id<ZegoEffectsEventHandler>)eventHandler;
 
-/// 开启亮眼, 开发者可以调用 [setEyesBrighteningParam] 来设置亮眼参数
+/// 开启亮眼, 开发者可以调用 [setEyesBrighteningParam] 来设置亮眼参数。
 - (ZegoEffects *)enableEyesBrightening:(BOOL)enable;
 
 /// 开启长下巴功能，可调用 [setLongChinParam] 接口设置长下巴参数。
@@ -66,6 +82,55 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 开启磨皮功能，可调用 [setSmoothParam] 接口设置磨皮参数。
 - (ZegoEffects *)enableSmooth:(BOOL)enable;
+
+/// 开启去除法令纹功能，可调用 [setWrinklesRemovingParam] 接口设置去除法令纹参数。
+- (ZegoEffects *)enableWrinklesRemoving:(BOOL)enable;
+
+/// 开启去除黑眼圈功能，可调用 [setDarkCirclesRemovingParam] 接口设置去除黑眼圈参数。
+- (ZegoEffects *)enableDarkCirclesRemoving:(BOOL)enable;
+
+/// 开启缩小额头高度功能，可调用 [setForeheadShorteningParam] 接口设置缩小额头高度参数。
+- (ZegoEffects *)enableForeheadShortening:(BOOL)enable;
+
+/// 开启瘦下颌骨功能，可调用 [setMandibleSlimmingParam] 接口设置瘦下颌骨参数。
+- (ZegoEffects *)enableMandibleSlimming:(BOOL)enable;
+
+/// 开启瘦颧骨功能，可调用 [setCheekboneSlimmingParam] 接口设置瘦颧骨参数。
+- (ZegoEffects *)enableCheekboneSlimming:(BOOL)enable;
+
+/// 开启小脸功能，可调用 [setFaceShorteningParam] 接口设置小脸参数。
+- (ZegoEffects *)enableFaceShortening:(BOOL)enable;
+
+/// 开启长鼻功能，可调用 [setNoseLengtheningParam] 接口设置长鼻参数。
+- (ZegoEffects *)enableNoseLengthening:(BOOL)enable;
+
+/// 开启眼线功能，可调用[setEyellinerParam]接口设置眼线参数。
+/// 注意: 与风格妆功能互斥，设置眼线资源后会使风格妆效果失效。
+- (ZegoEffects *)setEyeliner:(nullable NSString *)path;
+
+/// 开启眼睫毛功能，可调用[setEyelashesParam]接口设置眼睫毛参数。
+/// 注意: 与风格妆功能互斥，设置眼睫毛资源后会使风格妆效果失效。
+- (ZegoEffects *)setEyelashes:(nullable NSString *)path;
+
+///  开启眼影功能，可调用[setEyeshadowParam]接口设置眼影参数。
+/// 注意: 与风格妆功能互斥，设置眼影资源后会使风格妆效果失效。
+- (ZegoEffects *)setEyeshadow:(nullable NSString *)path;
+
+/// 开启腮红功能，可调用[setBlusherParam]接口设置腮红参数。
+/// 注意: 与风格妆功能互斥，设置腮红资源后会使风格妆效果失效。
+- (ZegoEffects *)setBlusher:(nullable NSString *)path;
+
+/// 开启口红功能，可调用[setLipstickParam]接口设置口红参数。
+/// 注意: 与风格妆功能互斥，设置口红资源后会使风格妆效果失效。
+- (ZegoEffects *)setLipstick:(nullable NSString *)path;
+
+/// 开启美瞳功能，可调用[setColoredcontactsParam]接口设置美瞳参数。
+/// 注意: 与风格妆功能互斥，设置美瞳资源后会使风格妆效果失效。
+- (ZegoEffects *)setColoredcontacts:(nullable NSString *)path;
+
+/// 开启风格妆功能,可调用[setMakeupParam]接口设置风格妆参数。
+/// 注意: 与挂件，腮红，眼线，眼睫毛，眼影，口红，美瞳功能互斥，设置风格妆资源后会使挂件，腮红，眼线，眼睫毛，眼影，口红，美瞳效果失效。
+- (ZegoEffects *)setMakeup:(nullable NSString *)path;
 
 /// 设置亮眼参数
 - (ZegoEffects *)setEyesBrighteningParam:(ZegoEffectsEyesBrighteningParam *)param;
@@ -91,33 +156,76 @@ NS_ASSUME_NONNULL_BEGIN
 ///
 /// 开发者可通过该接口设置不同的挂件。
 /// 注意：设置新的挂件后都会覆盖上次设置的挂件，如果需要关闭挂件请设置 [nil]
+/// 注意: 与风格妆功能互斥，设置挂件资源后会使风格妆效果失效。
 /// 挂件可能会覆盖一些美颜的效果
 ///
 /// @param path 挂件的绝对路径
 - (ZegoEffects *)setPendant:(nullable NSString *)path;
 
-/// 设置红润参数
+/// 设置红润参数。
 - (ZegoEffects *)setRosyParam:(ZegoEffectsRosyParam *)param;
 
-/// 设置锐化参数
+/// 设置锐化参数。
 - (ZegoEffects *)setSharpenParam:(ZegoEffectsSharpenParam *)param;
 
-/// 设置小嘴参数
+/// 设置小嘴参数。
 - (ZegoEffects *)setSmallMouthParam:(ZegoEffectsSmallMouthParam *)param;
 
-/// 设置磨皮参数
+/// 设置磨皮参数。
 - (ZegoEffects *)setSmoothParam:(ZegoEffectsSmoothParam *)param;
 
-/// 设置白牙参数
+/// 设置白牙参数。
 - (ZegoEffects *)setTeethWhiteningParam:(ZegoEffectsTeethWhiteningParam *)param;
 
-/// 使用后眼睛会变大
+/// 设置去除法令纹参数。
+- (ZegoEffects *)setWrinklesRemovingParam:(ZegoEffectsWrinklesRemovingParam *)param;
+
+/// 设置去除黑眼圈参数。
+- (ZegoEffects *)setDarkCirclesRemovingParam:(ZegoEffectsDarkCirclesRemovingParam *)param;
+
+/// 设置缩小额头高度参数。
+- (ZegoEffects *)setForeheadShorteningParam:(ZegoEffectsForeheadShorteningParam *)param;
+
+/// 设置瘦颧骨参数。
+- (ZegoEffects *)setCheekboneSlimmingParam:(ZegoEffectsCheekboneSlimmingParam *)param;
+
+/// 设置瘦下颌骨参数。
+- (ZegoEffects *)setMandibleSlimmingParam:(ZegoEffectsMandibleSlimmingParam *)param;
+
+/// 设置小脸参数。
+- (ZegoEffects *)setFaceShorteningParam:(ZegoEffectsFaceShorteningParam *)param;
+
+/// 设置长鼻参数。
+- (ZegoEffects *)setNoseLengtheningParam:(ZegoEffectsNoseLengtheningParam *)param;
+
+/// 设置眼线参数。
+- (ZegoEffects *)setEyelinerParam:(ZegoEffectsEyelinerParam *)param;
+
+/// 设置眼睫毛参数。
+- (ZegoEffects *)setEyelashesParam:(ZegoEffectsEyelashesParam *)param;
+
+/// 设置眼影参数。
+- (ZegoEffects *)setEyeshadowParam:(ZegoEffectsEyeshadowParam *)param;
+
+/// 设置腮红参数。
+- (ZegoEffects *)setBlusherParam:(ZegoEffectsBlusherParam *)param;
+
+/// 设置口红参数。
+- (ZegoEffects *)setLipstickParam:(ZegoEffectsLipstickParam *)param;
+
+///  设置美瞳参数。
+- (ZegoEffects *)setColoredcontactsParam:(ZegoEffectsColoredcontactsParam *)param;
+
+///  设置风格妆参数。
+- (ZegoEffects *)setMakeupParam:(ZegoEffectsMakeupParam *)param;
+
+/// 开启大眼功能，可调用[setBigEyesParam]接口设置大眼参数。
 - (ZegoEffects *)enableBigEyes:(BOOL)enable;
 
-/// 设置大眼参数
+/// 设置大眼参数。
 - (ZegoEffects *)setBigEyesParam:(ZegoEffectsBigEyesParam *)param;
 
-/// 开启后牙齿会变得更白, 可以通过 [setTeethWhiteningParam] 接口设置一些参数
+/// 开启白牙功能, 可以通过 [setTeethWhiteningParam] 接口设置白牙参数。
 - (ZegoEffects *)enableTeethWhitening:(BOOL)enable;
 
 /// 开启后皮肤会变得更白
@@ -266,18 +374,20 @@ NS_ASSUME_NONNULL_BEGIN
 /// 开启长小嘴功能，可调用 [setSmallMouthParam] 接口设置参数。
 - (ZegoEffects *)enableSmallMouth:(BOOL)enable;
 
-/// 设置 AI 模型，支持同时设置多个模型
-///
-/// 详情描述：如果开发者需要使用到一些高级功能，人脸检测，人像分割等，就需要通过该接口设置 AI 模型，否则 AI 模型相关的功能将无法正常使用。
-/// 调用时机/通知时机：全局生效，必须在创建 Effects 实例前设置。
-///
-/// @param modelInfoList ai模型路径
-+ (void)setModels:(NSArray<NSString *> *)modelInfoList;
+///// 设置 AI 模型，支持同时设置多个模型
+/////
+///// 详情描述：如果开发者需要使用到一些高级功能，人脸检测，人像分割等，就需要通过该接口设置 AI 模型，否则 AI 模型相关的功能将无法正常使用。
+///// 调用时机/通知时机：全局生效，必须在创建 Effects 实例前设置。
+/////
+///// @param modelInfoList ai模型路径
+//+ (void)setModels:(NSArray<NSString *> *)modelInfoList;
 
 /// 处理图像，该接口需要传入的图片类型为 CVPixelBufferRef 类型。
 ///
 /// 注意：在处理图像前请先调用 [initEnv] 初始化引擎环境，如果没有初始化引擎环境，会导致美颜失效。
 - (void)processImageBuffer:(CVPixelBufferRef)buff;
+
+- (void)processWithTextureId:(uint32_t)textureId width:(uint32_t)width height:(uint32_t)height;
 
 @end
 

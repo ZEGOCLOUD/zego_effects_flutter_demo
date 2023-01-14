@@ -101,6 +101,69 @@ typedef NS_ENUM(NSUInteger, ZegoEffectsScaleMode) {
 
 @end
 
+/// 去除法令纹参数
+///
+@interface ZegoEffectsWrinklesRemovingParam : NSObject
+
+/// 详情信息：去除法令纹强度，范围 [0~100]
+@property (nonatomic, assign) int intensity;
+
+@end
+
+/// 去除黑眼圈参数
+///
+@interface ZegoEffectsDarkCirclesRemovingParam : NSObject
+
+/// 详情信息：去除黑眼圈强度，范围 [0~100]
+@property (nonatomic, assign) int intensity;
+
+@end
+
+/// 缩小额头高度参数
+///
+@interface ZegoEffectsForeheadShorteningParam : NSObject
+
+/// 详情信息：缩小额头高度强度，范围 [0~100]
+@property (nonatomic, assign) int intensity;
+
+@end
+
+/// 瘦下颌骨参数
+///
+@interface ZegoEffectsMandibleSlimmingParam : NSObject
+
+/// 详情信息: 瘦下颌骨强度，范围[0~100]
+@property (nonatomic, assign) int intensity;
+
+@end
+
+/// 瘦颧骨参数
+
+@interface ZegoEffectsCheekboneSlimmingParam : NSObject
+
+/// 详情信息: 瘦颧骨强度，范围[0~100]
+@property (nonatomic, assign) int intensity;
+
+@end
+
+///  小脸参数
+
+@interface ZegoEffectsFaceShorteningParam : NSObject
+
+/// 详情信息: 小脸强度，范围[0~100]
+@property (nonatomic, assign) int intensity;
+
+@end
+
+///  长鼻参数
+
+@interface ZegoEffectsNoseLengtheningParam : NSObject
+
+/// 详情信息: 长鼻强度，范围[0~100]
+@property (nonatomic, assign) int intensity;
+
+@end
+
 /// 滤镜颜色风格参数
 ///
 @interface ZegoEffectsFilterParam : NSObject
@@ -115,6 +178,69 @@ typedef NS_ENUM(NSUInteger, ZegoEffectsScaleMode) {
 @interface ZegoEffectsLongChinParam : NSObject
 
 /// 详情描述：长下巴强度，范围 [-100~100]
+@property (nonatomic, assign) int intensity;
+
+@end
+
+/// 开发者可通过该类调整眼线
+///
+@interface ZegoEffectsEyelinerParam : NSObject
+
+/// 详情描述：眼线强度，范围 [0~100]
+@property (nonatomic, assign) int intensity;
+
+@end
+
+/// 开发者可通过该类调整眼睫毛
+///
+@interface ZegoEffectsEyelashesParam : NSObject
+
+/// 详情描述：眼睫毛强度，范围 [0~100]
+@property (nonatomic, assign) int intensity;
+
+@end
+
+/// 开发者可通过该类调整眼影
+///
+@interface ZegoEffectsEyeshadowParam : NSObject
+
+/// 详情描述：眼影强度，范围 [0~100]
+@property (nonatomic, assign) int intensity;
+
+@end
+
+/// 开发者可通过该类调整腮红
+///
+@interface ZegoEffectsBlusherParam : NSObject
+
+/// 详情描述：腮红强度，范围 [0~100]
+@property (nonatomic, assign) int intensity;
+
+@end
+
+/// 开发者可通过该类调整口红
+///
+@interface ZegoEffectsLipstickParam : NSObject
+
+/// 详情描述：口红强度，范围 [0~100]
+@property (nonatomic, assign) int intensity;
+
+@end
+
+/// 开发者可通过该类调整美瞳
+///
+@interface ZegoEffectsColoredcontactsParam : NSObject
+
+/// 详情描述：美瞳强度，范围 [0~100]
+@property (nonatomic, assign) int intensity;
+
+@end
+
+/// 开发者可通过该类调整风格妆
+///
+@interface ZegoEffectsMakeupParam : NSObject
+
+/// 详情描述：风格妆强度，范围 [0~100]
 @property (nonatomic, assign) int intensity;
 
 @end

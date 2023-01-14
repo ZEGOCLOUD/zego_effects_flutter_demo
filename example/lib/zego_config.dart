@@ -1,6 +1,4 @@
 import 'dart:async';
-import 'dart:convert';
-import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:io';
 import 'dart:math' show Random;
@@ -13,9 +11,10 @@ class ZegoConfig {
 
   // ----- Persistence params -----
 
-  int appID;
-  String appSign;
-  bool isTestEnv = true;
+  //Please set your appid and appsign before running the project
+  int appID = ;
+  String appSign = "xxx";
+  bool isTestEnv = false;
   int scenario = 1;
 
   bool enablePlatformView = false;
@@ -37,7 +36,8 @@ class ZegoConfig {
   Future<void> init() async {
     SharedPreferences config = await SharedPreferences.getInstance();
 
-    loadKeyCenterData();
+    this.appID = config.getInt('appID') ?? 0;
+    this.appSign = config.getString('appSign') ?? '';
     this.isTestEnv = config.getBool('isTestEnv') ?? true;
     this.scenario = config.getInt('scenario') ?? ZegoScenario.General.index;
 
@@ -59,6 +59,8 @@ class ZegoConfig {
   Future<void> saveConfig() async {
     SharedPreferences config = await SharedPreferences.getInstance();
 
+    config.setInt('appID', this.appID);
+    config.setString('appSign', this.appSign);
     config.setBool('isTestEnv', this.isTestEnv);
     config.setInt('scenario', this.scenario);
 
@@ -69,12 +71,5 @@ class ZegoConfig {
 
     config.setString('roomID', this.roomID);
     config.setString('streamID', this.streamID);
-  }
-
-  Future<void> loadKeyCenterData() async {
-    var jsonStr = await rootBundle.loadString("assets/key_center.json");
-    var dataObj = jsonDecode(jsonStr);
-    this.appID = dataObj['appID'];
-    this.appSign = dataObj['appSign'];
   }
 }

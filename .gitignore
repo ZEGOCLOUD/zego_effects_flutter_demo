@@ -25,3 +25,4 @@ doc/api/
 
 #vscode
 .vscode
+.DS_Store
