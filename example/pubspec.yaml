@@ -11,7 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  zego_express_engine: ^2.5.3
+  zego_express_engine: 2.8.1
 
   zego_effects_plugin:
     # When depending on this package from a real application you should use:

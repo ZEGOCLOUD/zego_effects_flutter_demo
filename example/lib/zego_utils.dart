@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'dart:io';
 
-
 class ZegoUtils {
   static showAlert(BuildContext context, String message) {
     showDialog(
@@ -12,7 +11,7 @@ class ZegoUtils {
             title: Text('Tips'),
             content: Text(message),
             actions: <Widget>[
-              FlatButton(
+              ElevatedButton(
                 child: Text('OK'),
                 onPressed: () {
                   Navigator.of(context).pop();
