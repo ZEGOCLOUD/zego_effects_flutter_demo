@@ -1,0 +1,890 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */; };
+		3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
+		74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74858FAE1ED2DC5600515810 /* AppDelegate.swift */; };
+		867FB374283CFFE40011D5AA /* FaceDetectionModel.model in Resources */ = {isa = PBXBuildFile; fileRef = 867FB372283CFFE40011D5AA /* FaceDetectionModel.model */; };
+		867FB375283CFFE40011D5AA /* SegmentationModel.model in Resources */ = {isa = PBXBuildFile; fileRef = 867FB373283CFFE40011D5AA /* SegmentationModel.model */; };
+		867FB3B1283D00380011D5AA /* lipstickdir_rust_red.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB378283D00380011D5AA /* lipstickdir_rust_red.bundle */; };
+		867FB3B2283D00380011D5AA /* lipstickdir_bean_paste_pink.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB379283D00380011D5AA /* lipstickdir_bean_paste_pink.bundle */; };
+		867FB3B3283D00380011D5AA /* lipstickdir_coral.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB37A283D00380011D5AA /* lipstickdir_coral.bundle */; };
+		867FB3B4283D00380011D5AA /* lipstickdir_sweet_orange.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB37B283D00380011D5AA /* lipstickdir_sweet_orange.bundle */; };
+		867FB3B5283D00380011D5AA /* lipstickdir_velvet_red.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB37C283D00380011D5AA /* lipstickdir_velvet_red.bundle */; };
+		867FB3B6283D00380011D5AA /* eyeshadowdir_vitality_orange.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB37E283D00380011D5AA /* eyeshadowdir_vitality_orange.bundle */; };
+		867FB3B7283D00380011D5AA /* eyeshadowdir_shimmer_pink.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB37F283D00380011D5AA /* eyeshadowdir_shimmer_pink.bundle */; };
+		867FB3B8283D00380011D5AA /* eyeshadowdir_mist_pink.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB380283D00380011D5AA /* eyeshadowdir_mist_pink.bundle */; };
+		867FB3B9283D00380011D5AA /* eyeshadowdir_mocha_brown.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB381283D00380011D5AA /* eyeshadowdir_mocha_brown.bundle */; };
+		867FB3BA283D00380011D5AA /* eyeshadowdir_tea_brown.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB382283D00380011D5AA /* eyeshadowdir_tea_brown.bundle */; };
+		867FB3BB283D00380011D5AA /* makeupdir_flawless.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB384283D00380011D5AA /* makeupdir_flawless.bundle */; };
+		867FB3BC283D00380011D5AA /* makeupdir_cutie_and_cool.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB385283D00380011D5AA /* makeupdir_cutie_and_cool.bundle */; };
+		867FB3BD283D00380011D5AA /* makeupdir_pure_and_sexy.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB386283D00380011D5AA /* makeupdir_pure_and_sexy.bundle */; };
+		867FB3BE283D00380011D5AA /* makeupdir_milky_eyes.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB387283D00380011D5AA /* makeupdir_milky_eyes.bundle */; };
+		867FB3BF283D00380011D5AA /* makeupdir_vulnerable_and_innocenteyes.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB388283D00380011D5AA /* makeupdir_vulnerable_and_innocenteyes.bundle */; };
+		867FB3C0283D00380011D5AA /* coloredcontactsdir_chocolate_brown.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB38A283D00380011D5AA /* coloredcontactsdir_chocolate_brown.bundle */; };
+		867FB3C1283D00380011D5AA /* coloredcontactsdir_polar_lights_brown.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB38B283D00380011D5AA /* coloredcontactsdir_polar_lights_brown.bundle */; };
+		867FB3C2283D00380011D5AA /* coloredcontactsdir_mystery_brown_green.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB38C283D00380011D5AA /* coloredcontactsdir_mystery_brown_green.bundle */; };
+		867FB3C3283D00380011D5AA /* coloredcontactsdir_starry_blue.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB38D283D00380011D5AA /* coloredcontactsdir_starry_blue.bundle */; };
+		867FB3C4283D00380011D5AA /* coloredcontactsdir_darknight_black.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB38E283D00380011D5AA /* coloredcontactsdir_darknight_black.bundle */; };
+		867FB3C5283D00380011D5AA /* eyelashesdir_curl.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB390283D00380011D5AA /* eyelashesdir_curl.bundle */; };
+		867FB3C6283D00380011D5AA /* eyelashesdir_slender.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB391283D00380011D5AA /* eyelashesdir_slender.bundle */; };
+		867FB3C7283D00380011D5AA /* eyelashesdir_natural.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB392283D00380011D5AA /* eyelashesdir_natural.bundle */; };
+		867FB3C8283D00380011D5AA /* eyelashesdir_bushy.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB393283D00380011D5AA /* eyelashesdir_bushy.bundle */; };
+		867FB3C9283D00380011D5AA /* eyelashesdir_tender.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB394283D00380011D5AA /* eyelashesdir_tender.bundle */; };
+		867FB3CA283D00380011D5AA /* eyelinerdir_temperament.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB396283D00380011D5AA /* eyelinerdir_temperament.bundle */; };
+		867FB3CB283D00380011D5AA /* eyelinerdir_wildcat.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB397283D00380011D5AA /* eyelinerdir_wildcat.bundle */; };
+		867FB3CC283D00380011D5AA /* eyelinerdir_natural.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB398283D00380011D5AA /* eyelinerdir_natural.bundle */; };
+		867FB3CD283D00380011D5AA /* eyelinerdir_scheming.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB399283D00380011D5AA /* eyelinerdir_scheming.bundle */; };
+		867FB3CE283D00380011D5AA /* eyelinerdir_pretty.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB39A283D00380011D5AA /* eyelinerdir_pretty.bundle */; };
+		867FB3CF283D00380011D5AA /* blusherdir_sweet_orange.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB39C283D00380011D5AA /* blusherdir_sweet_orange.bundle */; };
+		867FB3D0283D00380011D5AA /* blusherdir_slightly_drunk.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB39D283D00380011D5AA /* blusherdir_slightly_drunk.bundle */; };
+		867FB3D1283D00380011D5AA /* blusherdir_apricot_pink.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB39E283D00380011D5AA /* blusherdir_apricot_pink.bundle */; };
+		867FB3D2283D00380011D5AA /* blusherdir_milk_orange.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB39F283D00380011D5AA /* blusherdir_milk_orange.bundle */; };
+		867FB3D3283D00380011D5AA /* blusherdir_peach.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB3A0283D00380011D5AA /* blusherdir_peach.bundle */; };
+		867FB3D4283D00380011D5AA /* CommonResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB3A1283D00380011D5AA /* CommonResources.bundle */; };
+		867FB3D5283D00380011D5AA /* Film-like.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB3A3283D00380011D5AA /* Film-like.bundle */; };
+		867FB3D6283D00380011D5AA /* Night.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB3A4283D00380011D5AA /* Night.bundle */; };
+		867FB3D7283D00380011D5AA /* Autumn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB3A5283D00380011D5AA /* Autumn.bundle */; };
+		867FB3D8283D00380011D5AA /* Brighten.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB3A6283D00380011D5AA /* Brighten.bundle */; };
+		867FB3D9283D00380011D5AA /* Sunset.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB3A7283D00380011D5AA /* Sunset.bundle */; };
+		867FB3DA283D00380011D5AA /* Cool.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB3A8283D00380011D5AA /* Cool.bundle */; };
+		867FB3DB283D00380011D5AA /* Fresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB3A9283D00380011D5AA /* Fresh.bundle */; };
+		867FB3DC283D00380011D5AA /* Sweet.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB3AA283D00380011D5AA /* Sweet.bundle */; };
+		867FB3DD283D00380011D5AA /* Cozily.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB3AB283D00380011D5AA /* Cozily.bundle */; };
+		867FB3DE283D00380011D5AA /* Creamy.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB3AC283D00380011D5AA /* Creamy.bundle */; };
+		867FB3DF283D00380011D5AA /* PendantResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB3AD283D00380011D5AA /* PendantResources.bundle */; };
+		867FB3E0283D00380011D5AA /* TeethWhiteningResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB3AE283D00380011D5AA /* TeethWhiteningResources.bundle */; };
+		867FB3E1283D00380011D5AA /* FaceWhiteningResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB3AF283D00380011D5AA /* FaceWhiteningResources.bundle */; };
+		867FB3E2283D00380011D5AA /* RosyResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 867FB3B0283D00380011D5AA /* RosyResources.bundle */; };
+		867FB3EC283D08750011D5AA /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1787B989E9330E121BB234E /* Pods_Runner.framework */; };
+		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
+		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
+		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneratedPluginRegistrant.h; sourceTree = "<group>"; };
+		1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratedPluginRegistrant.m; sourceTree = "<group>"; };
+		1AED64D50047061DB9163ED0 /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
+		273BA06961B32E129FD823D2 /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
+		3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppFrameworkInfo.plist; path = Flutter/AppFrameworkInfo.plist; sourceTree = "<group>"; };
+		74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runner-Bridging-Header.h"; sourceTree = "<group>"; };
+		74858FAE1ED2DC5600515810 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7AFA3C8E1D35360C0083082E /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = Flutter/Release.xcconfig; sourceTree = "<group>"; };
+		867FB372283CFFE40011D5AA /* FaceDetectionModel.model */ = {isa = PBXFileReference; lastKnownFileType = file; path = FaceDetectionModel.model; sourceTree = "<group>"; };
+		867FB373283CFFE40011D5AA /* SegmentationModel.model */ = {isa = PBXFileReference; lastKnownFileType = file; path = SegmentationModel.model; sourceTree = "<group>"; };
+		867FB378283D00380011D5AA /* lipstickdir_rust_red.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = lipstickdir_rust_red.bundle; sourceTree = "<group>"; };
+		867FB379283D00380011D5AA /* lipstickdir_bean_paste_pink.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = lipstickdir_bean_paste_pink.bundle; sourceTree = "<group>"; };
+		867FB37A283D00380011D5AA /* lipstickdir_coral.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = lipstickdir_coral.bundle; sourceTree = "<group>"; };
+		867FB37B283D00380011D5AA /* lipstickdir_sweet_orange.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = lipstickdir_sweet_orange.bundle; sourceTree = "<group>"; };
+		867FB37C283D00380011D5AA /* lipstickdir_velvet_red.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = lipstickdir_velvet_red.bundle; sourceTree = "<group>"; };
+		867FB37E283D00380011D5AA /* eyeshadowdir_vitality_orange.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = eyeshadowdir_vitality_orange.bundle; sourceTree = "<group>"; };
+		867FB37F283D00380011D5AA /* eyeshadowdir_shimmer_pink.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = eyeshadowdir_shimmer_pink.bundle; sourceTree = "<group>"; };
+		867FB380283D00380011D5AA /* eyeshadowdir_mist_pink.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = eyeshadowdir_mist_pink.bundle; sourceTree = "<group>"; };
+		867FB381283D00380011D5AA /* eyeshadowdir_mocha_brown.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = eyeshadowdir_mocha_brown.bundle; sourceTree = "<group>"; };
+		867FB382283D00380011D5AA /* eyeshadowdir_tea_brown.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = eyeshadowdir_tea_brown.bundle; sourceTree = "<group>"; };
+		867FB384283D00380011D5AA /* makeupdir_flawless.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = makeupdir_flawless.bundle; sourceTree = "<group>"; };
+		867FB385283D00380011D5AA /* makeupdir_cutie_and_cool.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = makeupdir_cutie_and_cool.bundle; sourceTree = "<group>"; };
+		867FB386283D00380011D5AA /* makeupdir_pure_and_sexy.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = makeupdir_pure_and_sexy.bundle; sourceTree = "<group>"; };
+		867FB387283D00380011D5AA /* makeupdir_milky_eyes.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = makeupdir_milky_eyes.bundle; sourceTree = "<group>"; };
+		867FB388283D00380011D5AA /* makeupdir_vulnerable_and_innocenteyes.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = makeupdir_vulnerable_and_innocenteyes.bundle; sourceTree = "<group>"; };
+		867FB38A283D00380011D5AA /* coloredcontactsdir_chocolate_brown.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = coloredcontactsdir_chocolate_brown.bundle; sourceTree = "<group>"; };
+		867FB38B283D00380011D5AA /* coloredcontactsdir_polar_lights_brown.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = coloredcontactsdir_polar_lights_brown.bundle; sourceTree = "<group>"; };
+		867FB38C283D00380011D5AA /* coloredcontactsdir_mystery_brown_green.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = coloredcontactsdir_mystery_brown_green.bundle; sourceTree = "<group>"; };
+		867FB38D283D00380011D5AA /* coloredcontactsdir_starry_blue.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = coloredcontactsdir_starry_blue.bundle; sourceTree = "<group>"; };
+		867FB38E283D00380011D5AA /* coloredcontactsdir_darknight_black.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = coloredcontactsdir_darknight_black.bundle; sourceTree = "<group>"; };
+		867FB390283D00380011D5AA /* eyelashesdir_curl.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = eyelashesdir_curl.bundle; sourceTree = "<group>"; };
+		867FB391283D00380011D5AA /* eyelashesdir_slender.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = eyelashesdir_slender.bundle; sourceTree = "<group>"; };
+		867FB392283D00380011D5AA /* eyelashesdir_natural.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = eyelashesdir_natural.bundle; sourceTree = "<group>"; };
+		867FB393283D00380011D5AA /* eyelashesdir_bushy.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = eyelashesdir_bushy.bundle; sourceTree = "<group>"; };
+		867FB394283D00380011D5AA /* eyelashesdir_tender.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = eyelashesdir_tender.bundle; sourceTree = "<group>"; };
+		867FB396283D00380011D5AA /* eyelinerdir_temperament.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = eyelinerdir_temperament.bundle; sourceTree = "<group>"; };
+		867FB397283D00380011D5AA /* eyelinerdir_wildcat.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = eyelinerdir_wildcat.bundle; sourceTree = "<group>"; };
+		867FB398283D00380011D5AA /* eyelinerdir_natural.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = eyelinerdir_natural.bundle; sourceTree = "<group>"; };
+		867FB399283D00380011D5AA /* eyelinerdir_scheming.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = eyelinerdir_scheming.bundle; sourceTree = "<group>"; };
+		867FB39A283D00380011D5AA /* eyelinerdir_pretty.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = eyelinerdir_pretty.bundle; sourceTree = "<group>"; };
+		867FB39C283D00380011D5AA /* blusherdir_sweet_orange.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = blusherdir_sweet_orange.bundle; sourceTree = "<group>"; };
+		867FB39D283D00380011D5AA /* blusherdir_slightly_drunk.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = blusherdir_slightly_drunk.bundle; sourceTree = "<group>"; };
+		867FB39E283D00380011D5AA /* blusherdir_apricot_pink.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = blusherdir_apricot_pink.bundle; sourceTree = "<group>"; };
+		867FB39F283D00380011D5AA /* blusherdir_milk_orange.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = blusherdir_milk_orange.bundle; sourceTree = "<group>"; };
+		867FB3A0283D00380011D5AA /* blusherdir_peach.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = blusherdir_peach.bundle; sourceTree = "<group>"; };
+		867FB3A1283D00380011D5AA /* CommonResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CommonResources.bundle; sourceTree = "<group>"; };
+		867FB3A3283D00380011D5AA /* Film-like.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "Film-like.bundle"; sourceTree = "<group>"; };
+		867FB3A4283D00380011D5AA /* Night.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Night.bundle; sourceTree = "<group>"; };
+		867FB3A5283D00380011D5AA /* Autumn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Autumn.bundle; sourceTree = "<group>"; };
+		867FB3A6283D00380011D5AA /* Brighten.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Brighten.bundle; sourceTree = "<group>"; };
+		867FB3A7283D00380011D5AA /* Sunset.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Sunset.bundle; sourceTree = "<group>"; };
+		867FB3A8283D00380011D5AA /* Cool.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Cool.bundle; sourceTree = "<group>"; };
+		867FB3A9283D00380011D5AA /* Fresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Fresh.bundle; sourceTree = "<group>"; };
+		867FB3AA283D00380011D5AA /* Sweet.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Sweet.bundle; sourceTree = "<group>"; };
+		867FB3AB283D00380011D5AA /* Cozily.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Cozily.bundle; sourceTree = "<group>"; };
+		867FB3AC283D00380011D5AA /* Creamy.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Creamy.bundle; sourceTree = "<group>"; };
+		867FB3AD283D00380011D5AA /* PendantResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PendantResources.bundle; sourceTree = "<group>"; };
+		867FB3AE283D00380011D5AA /* TeethWhiteningResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TeethWhiteningResources.bundle; sourceTree = "<group>"; };
+		867FB3AF283D00380011D5AA /* FaceWhiteningResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FaceWhiteningResources.bundle; sourceTree = "<group>"; };
+		867FB3B0283D00380011D5AA /* RosyResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RosyResources.bundle; sourceTree = "<group>"; };
+		867FB3F4283D0A8F0011D5AA /* ZegoEffects.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ZegoEffects.xcframework; path = .symlinks/plugins/zego_effects_plugin/ios/../../../../../../ios/ZegoEffects.xcframework; sourceTree = "<group>"; };
+		86B00F3A283CC79D00EB830A /* ZegoExpressEngine.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ZegoExpressEngine.xcframework; path = Pods/ZegoExpressEngine/Video/iOS/ZegoExpressEngine.xcframework; sourceTree = "<group>"; };
+		9740EEB21CF90195004384FC /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Debug.xcconfig; path = Flutter/Debug.xcconfig; sourceTree = "<group>"; };
+		9740EEB31CF90195004384FC /* Generated.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Generated.xcconfig; path = Flutter/Generated.xcconfig; sourceTree = "<group>"; };
+		97C146EE1CF9000F007C117D /* Runner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97C146FB1CF9000F007C117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		97C146FD1CF9000F007C117D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		97C147001CF9000F007C117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		97C147021CF9000F007C117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C34AC2113A3FE3A5BFB2A95 /* Pods-Runner.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.profile.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig"; sourceTree = "<group>"; };
+		F1787B989E9330E121BB234E /* Pods_Runner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Runner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		97C146EB1CF9000F007C117D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				867FB3EC283D08750011D5AA /* Pods_Runner.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7A935E04A1D5AF30E31E0EF1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				273BA06961B32E129FD823D2 /* Pods-Runner.debug.xcconfig */,
+				1AED64D50047061DB9163ED0 /* Pods-Runner.release.xcconfig */,
+				9C34AC2113A3FE3A5BFB2A95 /* Pods-Runner.profile.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8608DABF26897B8900B50D8E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				866ACBC826BBD97300F21CDC /* Models */,
+				866ACBD526BBD97300F21CDC /* Resources */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		866ACBC826BBD97300F21CDC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				867FB372283CFFE40011D5AA /* FaceDetectionModel.model */,
+				867FB373283CFFE40011D5AA /* SegmentationModel.model */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		866ACBD526BBD97300F21CDC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				867FB3A2283D00380011D5AA /* ColorfulStyleResources */,
+				867FB3A1283D00380011D5AA /* CommonResources.bundle */,
+				867FB3AF283D00380011D5AA /* FaceWhiteningResources.bundle */,
+				867FB376283D00380011D5AA /* MakeupResources */,
+				867FB3AD283D00380011D5AA /* PendantResources.bundle */,
+				867FB3B0283D00380011D5AA /* RosyResources.bundle */,
+				867FB3AE283D00380011D5AA /* TeethWhiteningResources.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		867FB376283D00380011D5AA /* MakeupResources */ = {
+			isa = PBXGroup;
+			children = (
+				867FB377283D00380011D5AA /* lipstickdir */,
+				867FB37D283D00380011D5AA /* eyeshadowdir */,
+				867FB383283D00380011D5AA /* makeupdir */,
+				867FB389283D00380011D5AA /* coloredcontactsdir */,
+				867FB38F283D00380011D5AA /* eyelashesdir */,
+				867FB395283D00380011D5AA /* eyelinerdir */,
+				867FB39B283D00380011D5AA /* blusherdir */,
+			);
+			path = MakeupResources;
+			sourceTree = "<group>";
+		};
+		867FB377283D00380011D5AA /* lipstickdir */ = {
+			isa = PBXGroup;
+			children = (
+				867FB378283D00380011D5AA /* lipstickdir_rust_red.bundle */,
+				867FB379283D00380011D5AA /* lipstickdir_bean_paste_pink.bundle */,
+				867FB37A283D00380011D5AA /* lipstickdir_coral.bundle */,
+				867FB37B283D00380011D5AA /* lipstickdir_sweet_orange.bundle */,
+				867FB37C283D00380011D5AA /* lipstickdir_velvet_red.bundle */,
+			);
+			path = lipstickdir;
+			sourceTree = "<group>";
+		};
+		867FB37D283D00380011D5AA /* eyeshadowdir */ = {
+			isa = PBXGroup;
+			children = (
+				867FB37E283D00380011D5AA /* eyeshadowdir_vitality_orange.bundle */,
+				867FB37F283D00380011D5AA /* eyeshadowdir_shimmer_pink.bundle */,
+				867FB380283D00380011D5AA /* eyeshadowdir_mist_pink.bundle */,
+				867FB381283D00380011D5AA /* eyeshadowdir_mocha_brown.bundle */,
+				867FB382283D00380011D5AA /* eyeshadowdir_tea_brown.bundle */,
+			);
+			path = eyeshadowdir;
+			sourceTree = "<group>";
+		};
+		867FB383283D00380011D5AA /* makeupdir */ = {
+			isa = PBXGroup;
+			children = (
+				867FB384283D00380011D5AA /* makeupdir_flawless.bundle */,
+				867FB385283D00380011D5AA /* makeupdir_cutie_and_cool.bundle */,
+				867FB386283D00380011D5AA /* makeupdir_pure_and_sexy.bundle */,
+				867FB387283D00380011D5AA /* makeupdir_milky_eyes.bundle */,
+				867FB388283D00380011D5AA /* makeupdir_vulnerable_and_innocenteyes.bundle */,
+			);
+			path = makeupdir;
+			sourceTree = "<group>";
+		};
+		867FB389283D00380011D5AA /* coloredcontactsdir */ = {
+			isa = PBXGroup;
+			children = (
+				867FB38A283D00380011D5AA /* coloredcontactsdir_chocolate_brown.bundle */,
+				867FB38B283D00380011D5AA /* coloredcontactsdir_polar_lights_brown.bundle */,
+				867FB38C283D00380011D5AA /* coloredcontactsdir_mystery_brown_green.bundle */,
+				867FB38D283D00380011D5AA /* coloredcontactsdir_starry_blue.bundle */,
+				867FB38E283D00380011D5AA /* coloredcontactsdir_darknight_black.bundle */,
+			);
+			path = coloredcontactsdir;
+			sourceTree = "<group>";
+		};
+		867FB38F283D00380011D5AA /* eyelashesdir */ = {
+			isa = PBXGroup;
+			children = (
+				867FB390283D00380011D5AA /* eyelashesdir_curl.bundle */,
+				867FB391283D00380011D5AA /* eyelashesdir_slender.bundle */,
+				867FB392283D00380011D5AA /* eyelashesdir_natural.bundle */,
+				867FB393283D00380011D5AA /* eyelashesdir_bushy.bundle */,
+				867FB394283D00380011D5AA /* eyelashesdir_tender.bundle */,
+			);
+			path = eyelashesdir;
+			sourceTree = "<group>";
+		};
+		867FB395283D00380011D5AA /* eyelinerdir */ = {
+			isa = PBXGroup;
+			children = (
+				867FB396283D00380011D5AA /* eyelinerdir_temperament.bundle */,
+				867FB397283D00380011D5AA /* eyelinerdir_wildcat.bundle */,
+				867FB398283D00380011D5AA /* eyelinerdir_natural.bundle */,
+				867FB399283D00380011D5AA /* eyelinerdir_scheming.bundle */,
+				867FB39A283D00380011D5AA /* eyelinerdir_pretty.bundle */,
+			);
+			path = eyelinerdir;
+			sourceTree = "<group>";
+		};
+		867FB39B283D00380011D5AA /* blusherdir */ = {
+			isa = PBXGroup;
+			children = (
+				867FB39C283D00380011D5AA /* blusherdir_sweet_orange.bundle */,
+				867FB39D283D00380011D5AA /* blusherdir_slightly_drunk.bundle */,
+				867FB39E283D00380011D5AA /* blusherdir_apricot_pink.bundle */,
+				867FB39F283D00380011D5AA /* blusherdir_milk_orange.bundle */,
+				867FB3A0283D00380011D5AA /* blusherdir_peach.bundle */,
+			);
+			path = blusherdir;
+			sourceTree = "<group>";
+		};
+		867FB3A2283D00380011D5AA /* ColorfulStyleResources */ = {
+			isa = PBXGroup;
+			children = (
+				867FB3A3283D00380011D5AA /* Film-like.bundle */,
+				867FB3A4283D00380011D5AA /* Night.bundle */,
+				867FB3A5283D00380011D5AA /* Autumn.bundle */,
+				867FB3A6283D00380011D5AA /* Brighten.bundle */,
+				867FB3A7283D00380011D5AA /* Sunset.bundle */,
+				867FB3A8283D00380011D5AA /* Cool.bundle */,
+				867FB3A9283D00380011D5AA /* Fresh.bundle */,
+				867FB3AA283D00380011D5AA /* Sweet.bundle */,
+				867FB3AB283D00380011D5AA /* Cozily.bundle */,
+				867FB3AC283D00380011D5AA /* Creamy.bundle */,
+			);
+			path = ColorfulStyleResources;
+			sourceTree = "<group>";
+		};
+		9740EEB11CF90186004384FC /* Flutter */ = {
+			isa = PBXGroup;
+			children = (
+				3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */,
+				9740EEB21CF90195004384FC /* Debug.xcconfig */,
+				7AFA3C8E1D35360C0083082E /* Release.xcconfig */,
+				9740EEB31CF90195004384FC /* Generated.xcconfig */,
+			);
+			name = Flutter;
+			sourceTree = "<group>";
+		};
+		97C146E51CF9000F007C117D = {
+			isa = PBXGroup;
+			children = (
+				9740EEB11CF90186004384FC /* Flutter */,
+				97C146F01CF9000F007C117D /* Runner */,
+				97C146EF1CF9000F007C117D /* Products */,
+				7A935E04A1D5AF30E31E0EF1 /* Pods */,
+				F068E6A1DD6D3586794C7E4B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		97C146EF1CF9000F007C117D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97C146EE1CF9000F007C117D /* Runner.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97C146F01CF9000F007C117D /* Runner */ = {
+			isa = PBXGroup;
+			children = (
+				8608DABF26897B8900B50D8E /* Resources */,
+				97C146FA1CF9000F007C117D /* Main.storyboard */,
+				97C146FD1CF9000F007C117D /* Assets.xcassets */,
+				97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */,
+				97C147021CF9000F007C117D /* Info.plist */,
+				1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */,
+				1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */,
+				74858FAE1ED2DC5600515810 /* AppDelegate.swift */,
+				74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */,
+			);
+			path = Runner;
+			sourceTree = "<group>";
+		};
+		F068E6A1DD6D3586794C7E4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				867FB3F4283D0A8F0011D5AA /* ZegoEffects.xcframework */,
+				86B00F3A283CC79D00EB830A /* ZegoExpressEngine.xcframework */,
+				F1787B989E9330E121BB234E /* Pods_Runner.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		97C146ED1CF9000F007C117D /* Runner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97C147051CF9000F007C117D /* Build configuration list for PBXNativeTarget "Runner" */;
+			buildPhases = (
+				F02DD96EF50E02EAA1A0DB78 /* [CP] Check Pods Manifest.lock */,
+				9740EEB61CF901F6004384FC /* Run Script */,
+				97C146EA1CF9000F007C117D /* Sources */,
+				97C146EB1CF9000F007C117D /* Frameworks */,
+				97C146EC1CF9000F007C117D /* Resources */,
+				3B06AD1E1E4923F5004D2608 /* Thin Binary */,
+				6CF23BFDB4C7B6CB1474B9A9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Runner;
+			productName = Runner;
+			productReference = 97C146EE1CF9000F007C117D /* Runner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		97C146E61CF9000F007C117D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1300;
+				ORGANIZATIONNAME = "";
+				TargetAttributes = {
+					97C146ED1CF9000F007C117D = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 1100;
+					};
+				};
+			};
+			buildConfigurationList = 97C146E91CF9000F007C117D /* Build configuration list for PBXProject "Runner" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 97C146E51CF9000F007C117D;
+			productRefGroup = 97C146EF1CF9000F007C117D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97C146ED1CF9000F007C117D /* Runner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		97C146EC1CF9000F007C117D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				867FB3B4283D00380011D5AA /* lipstickdir_sweet_orange.bundle in Resources */,
+				867FB3E2283D00380011D5AA /* RosyResources.bundle in Resources */,
+				867FB3CE283D00380011D5AA /* eyelinerdir_pretty.bundle in Resources */,
+				867FB3E1283D00380011D5AA /* FaceWhiteningResources.bundle in Resources */,
+				867FB3E0283D00380011D5AA /* TeethWhiteningResources.bundle in Resources */,
+				867FB3D1283D00380011D5AA /* blusherdir_apricot_pink.bundle in Resources */,
+				867FB3B8283D00380011D5AA /* eyeshadowdir_mist_pink.bundle in Resources */,
+				867FB3D0283D00380011D5AA /* blusherdir_slightly_drunk.bundle in Resources */,
+				867FB3B3283D00380011D5AA /* lipstickdir_coral.bundle in Resources */,
+				867FB3CB283D00380011D5AA /* eyelinerdir_wildcat.bundle in Resources */,
+				867FB3D4283D00380011D5AA /* CommonResources.bundle in Resources */,
+				867FB3B5283D00380011D5AA /* lipstickdir_velvet_red.bundle in Resources */,
+				867FB3C1283D00380011D5AA /* coloredcontactsdir_polar_lights_brown.bundle in Resources */,
+				867FB3BC283D00380011D5AA /* makeupdir_cutie_and_cool.bundle in Resources */,
+				867FB3C5283D00380011D5AA /* eyelashesdir_curl.bundle in Resources */,
+				867FB3D7283D00380011D5AA /* Autumn.bundle in Resources */,
+				867FB3C7283D00380011D5AA /* eyelashesdir_natural.bundle in Resources */,
+				867FB3B6283D00380011D5AA /* eyeshadowdir_vitality_orange.bundle in Resources */,
+				867FB3C0283D00380011D5AA /* coloredcontactsdir_chocolate_brown.bundle in Resources */,
+				867FB3CC283D00380011D5AA /* eyelinerdir_natural.bundle in Resources */,
+				97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */,
+				867FB3BE283D00380011D5AA /* makeupdir_milky_eyes.bundle in Resources */,
+				867FB3B9283D00380011D5AA /* eyeshadowdir_mocha_brown.bundle in Resources */,
+				867FB3D9283D00380011D5AA /* Sunset.bundle in Resources */,
+				867FB3B7283D00380011D5AA /* eyeshadowdir_shimmer_pink.bundle in Resources */,
+				3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */,
+				867FB3C8283D00380011D5AA /* eyelashesdir_bushy.bundle in Resources */,
+				867FB3BD283D00380011D5AA /* makeupdir_pure_and_sexy.bundle in Resources */,
+				867FB3BA283D00380011D5AA /* eyeshadowdir_tea_brown.bundle in Resources */,
+				867FB3DD283D00380011D5AA /* Cozily.bundle in Resources */,
+				867FB3BF283D00380011D5AA /* makeupdir_vulnerable_and_innocenteyes.bundle in Resources */,
+				867FB3DC283D00380011D5AA /* Sweet.bundle in Resources */,
+				867FB374283CFFE40011D5AA /* FaceDetectionModel.model in Resources */,
+				867FB3DA283D00380011D5AA /* Cool.bundle in Resources */,
+				867FB3CD283D00380011D5AA /* eyelinerdir_scheming.bundle in Resources */,
+				867FB3D8283D00380011D5AA /* Brighten.bundle in Resources */,
+				867FB3C4283D00380011D5AA /* coloredcontactsdir_darknight_black.bundle in Resources */,
+				867FB3B1283D00380011D5AA /* lipstickdir_rust_red.bundle in Resources */,
+				867FB3D3283D00380011D5AA /* blusherdir_peach.bundle in Resources */,
+				867FB3D2283D00380011D5AA /* blusherdir_milk_orange.bundle in Resources */,
+				867FB3BB283D00380011D5AA /* makeupdir_flawless.bundle in Resources */,
+				867FB3B2283D00380011D5AA /* lipstickdir_bean_paste_pink.bundle in Resources */,
+				867FB3D5283D00380011D5AA /* Film-like.bundle in Resources */,
+				867FB3D6283D00380011D5AA /* Night.bundle in Resources */,
+				867FB3DF283D00380011D5AA /* PendantResources.bundle in Resources */,
+				867FB3CA283D00380011D5AA /* eyelinerdir_temperament.bundle in Resources */,
+				867FB3C2283D00380011D5AA /* coloredcontactsdir_mystery_brown_green.bundle in Resources */,
+				97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */,
+				97C146FC1CF9000F007C117D /* Main.storyboard in Resources */,
+				867FB3C3283D00380011D5AA /* coloredcontactsdir_starry_blue.bundle in Resources */,
+				867FB3CF283D00380011D5AA /* blusherdir_sweet_orange.bundle in Resources */,
+				867FB3DE283D00380011D5AA /* Creamy.bundle in Resources */,
+				867FB3DB283D00380011D5AA /* Fresh.bundle in Resources */,
+				867FB375283CFFE40011D5AA /* SegmentationModel.model in Resources */,
+				867FB3C6283D00380011D5AA /* eyelashesdir_slender.bundle in Resources */,
+				867FB3C9283D00380011D5AA /* eyelashesdir_tender.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B06AD1E1E4923F5004D2608 /* Thin Binary */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Thin Binary";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" embed_and_thin\n";
+		};
+		6CF23BFDB4C7B6CB1474B9A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9740EEB61CF901F6004384FC /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" build\n";
+		};
+		F02DD96EF50E02EAA1A0DB78 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Runner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		97C146EA1CF9000F007C117D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */,
+				1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		97C146FA1CF9000F007C117D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97C146FB1CF9000F007C117D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97C147001CF9000F007C117D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		249021D3217E4FDB00AE95B9 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Profile;
+		};
+		249021D4217E4FDB00AE95B9 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = B82BHJ5H89;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+					"\"$(SRCROOT)/Pods\"/**",
+				);
+				INFOPLIST_FILE = Runner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)/**",
+					"$(PROJECT_DIR)/Flutter/**",
+					"\"$(SRCROOT)/Pods\"/**",
+				);
+				OTHER_CODE_SIGN_FLAGS = "--generate-entitlement-der";
+				PRODUCT_BUNDLE_IDENTIFIER = fun.live247.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Profile;
+		};
+		97C147031CF9000F007C117D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		97C147041CF9000F007C117D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		97C147061CF9000F007C117D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = B82BHJ5H89;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+					"\"$(SRCROOT)/Pods\"/**",
+				);
+				INFOPLIST_FILE = Runner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)/**",
+					"$(PROJECT_DIR)/Flutter/**",
+					"\"$(SRCROOT)/Pods\"/**",
+				);
+				OTHER_CODE_SIGN_FLAGS = "--generate-entitlement-der";
+				PRODUCT_BUNDLE_IDENTIFIER = fun.live247.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		97C147071CF9000F007C117D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEVELOPMENT_TEAM = B82BHJ5H89;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+					"\"$(SRCROOT)/Pods\"/**",
+				);
+				INFOPLIST_FILE = Runner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)/**",
+					"$(PROJECT_DIR)/Flutter/**",
+					"\"$(SRCROOT)/Pods\"/**",
+				);
+				OTHER_CODE_SIGN_FLAGS = "--generate-entitlement-der";
+				PRODUCT_BUNDLE_IDENTIFIER = fun.live247.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		97C146E91CF9000F007C117D /* Build configuration list for PBXProject "Runner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97C147031CF9000F007C117D /* Debug */,
+				97C147041CF9000F007C117D /* Release */,
+				249021D3217E4FDB00AE95B9 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97C147051CF9000F007C117D /* Build configuration list for PBXNativeTarget "Runner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97C147061CF9000F007C117D /* Debug */,
+				97C147071CF9000F007C117D /* Release */,
+				249021D4217E4FDB00AE95B9 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 97C146E61CF9000F007C117D /* Project object */;
+}

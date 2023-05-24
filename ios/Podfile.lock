@@ -1,0 +1,52 @@
+PODS:
+  - Flutter (1.0.0)
+  - "permission_handler (5.1.0+2)":
+    - Flutter
+  - shared_preferences_foundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
+  - zego_effects_plugin (0.0.1):
+    - Flutter
+    - ZegoEffects
+  - zego_express_engine (3.3.0):
+    - Flutter
+    - ZegoExpressEngine (= 3.3.0)
+  - ZegoEffects (1.4.9)
+  - ZegoExpressEngine (3.3.0)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - permission_handler (from `.symlinks/plugins/permission_handler/ios`)
+  - shared_preferences_foundation (from `.symlinks/plugins/shared_preferences_foundation/ios`)
+  - zego_effects_plugin (from `.symlinks/plugins/zego_effects_plugin/ios`)
+  - zego_express_engine (from `.symlinks/plugins/zego_express_engine/ios`)
+
+SPEC REPOS:
+  trunk:
+    - ZegoEffects
+    - ZegoExpressEngine
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  permission_handler:
+    :path: ".symlinks/plugins/permission_handler/ios"
+  shared_preferences_foundation:
+    :path: ".symlinks/plugins/shared_preferences_foundation/ios"
+  zego_effects_plugin:
+    :path: ".symlinks/plugins/zego_effects_plugin/ios"
+  zego_express_engine:
+    :path: ".symlinks/plugins/zego_express_engine/ios"
+
+SPEC CHECKSUMS:
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  permission_handler: ccb20a9fad0ee9b1314a52b70b76b473c5f8dab0
+  shared_preferences_foundation: 986fc17f3d3251412d18b0265f9c64113a8c2472
+  zego_effects_plugin: 65e7890846ef6fdde981ffb795f1ac7515a4ced2
+  zego_express_engine: b15affc48737b3a10c68960835eae4fe1f8c6f4c
+  ZegoEffects: a26d5ddbc430e64b3c6b4b29a911defae8ca817e
+  ZegoExpressEngine: 1b3ec3ce7875cbf1c908adc05c5854a2af3f5d38
+
+PODFILE CHECKSUM: c0789d4defd69a2db59072a7136846914bd4b13b
+
+COCOAPODS: 1.11.2
