@@ -5,7 +5,7 @@ description: Demonstrates how to use the zego_effects_plugin plugin.
 # pub.dev using `pub publish`. This is preferred for private packages.
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: ">=2.12.0 <4.0.0"
 
 dependencies:
   flutter:
@@ -14,12 +14,13 @@ dependencies:
   zego_express_engine: ^3.0.0
 
   zego_effects_plugin: ^1.0.0
+    # path: ../
     # When depending on this package from a real application you should use:
     #   zego_effects_plugin: ^x.y.z
     # See https://dart.dev/tools/pub/dependencies#version-constraints
     # The example app is bundled with the plugin so we use a path dependency on
     # the parent directory to use the current plugin's version.
-#    path: ../
+
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.

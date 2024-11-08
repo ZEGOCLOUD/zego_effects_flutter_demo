@@ -1,4 +1,4 @@
-package com.zego.doudong.zego_effects_plugin_example
+package com.zegocloud.zegouikit.example.prebuiltcall
 
 import io.flutter.embedding.android.FlutterActivity
 

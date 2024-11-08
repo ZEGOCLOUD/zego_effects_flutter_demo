@@ -1,16 +1,41 @@
-# zego_effects_plugin_example
+# zego_effects_flutter_demo
 
-Demonstrates how to use the zego_effects_plugin plugin.
+Zego Effects Flutter Demo User Guide
 
-## Getting Started
+[中文说明](./README_CN.md)
 
-This project is a starting point for a Flutter application.
+### Quick Start
 
-A few resources to get you started if this is your first Flutter project:
+#### I. Download and Import Resources to Your Project
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Download the latest version of the Effects SDK from the SDK download website (iOS download link: [here](https://doc-zh.zego.im/article/15898), Android download link: [here](https://doc-zh.zego.im/article/15899)). After extracting, import the `Resources` and `Models` folders into your project.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+  --------------------------------------------------------------------------------------------------------------------------------
+  Note: You only need to add the resources and models to your project. The Flutter SDK will automatically download the native Effects SDK dependencies, so you can ignore the SDK directory inside the downloaded Zip package.
+  --------------------------------------------------------------------------------------------------------------------------------
+  For **iOS**: Add the `Resources` and `Models` folders to your Xcode project and select the option to create folders in the group settings. Assuming your project is named `Runner` and you place all resources in the `Resources` folder (*you can specify any folder name*), your project directory structure should look like this after import:
+
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Note: You cannot directly place the `Resources` and `Models` folders into the Runner directory; instead, you must drag these two folders onto the Assets directory in the Xcode project and select the `Create folders` option when setting the Group.
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  ![](media/image2.png)
+
+  For **Android**: Add the `Resources` and `Models` folders to the `assets` directory of your Android project. Typically, resources should be placed in the `android/app/src/main/assets` directory, so your project directory structure should look like this after import:
+
+  ![](media/image3.png)
+
+#### II. Configure AppID and AppSign
+
+Modify `lib/zego_config.dart`, and change the appID and appSign to the ones you applied for in the Zego control console.
+
+  ![](media/image4.png)
+
+  Also, change the `applicationID` for Android and `bundlerID` for iOS to the corresponding values filled in when you applied for Effects (technical support will assist with the application).
+
+  ![](media/image5.png)
+
+  ![](media/image6.png)
+
+#### III. Run
+
+Follow the running method of other Flutter projects and compile and run using Android Studio or Xcode.

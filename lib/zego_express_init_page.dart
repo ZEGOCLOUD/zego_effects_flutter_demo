@@ -38,7 +38,7 @@ class _ExpressInitPageState extends State<ExpressInitPage> {
     });
   }
 
-  void onCreateEngineButtonPressed() {
+  void onCreateEngineButtonPressed() async{
     String strAppID = _appIDEdController.text.trim();
     String appSign = _appSignEdController.text.trim();
 
@@ -56,7 +56,7 @@ class _ExpressInitPageState extends State<ExpressInitPage> {
     bool isEnablePlatformView = Platform.isIOS;
 
     // Step1: Create ZegoExpressEngine
-    ZegoExpressEngine.createEngine(appID, appSign, false, ZegoScenario.Live,
+    await ZegoExpressEngine.createEngine(appID, appSign, false, ZegoScenario.Live,
         enablePlatformView: isEnablePlatformView);
 
     ZegoConfig.instance.appID = appID;
@@ -289,7 +289,7 @@ class _ExpressInitPageState extends State<ExpressInitPage> {
       height: 60.0,
       child: CupertinoButton(
         child: Text(
-          'Create Engine',
+          'Create Express Engine',
           style: TextStyle(color: Colors.white),
         ),
         onPressed: onCreateEngineButtonPressed,

@@ -18,20 +18,13 @@ class EffectsPreviewPage extends StatefulWidget {
 
 class _EffectsPreviewPageState extends State<EffectsPreviewPage> {
   int _previewId = -1;
-  Widget ? _previewViewWidget;
-  ZegoCanvas ? _previewCanvas;
+  Widget? _previewViewWidget;
+  ZegoCanvas? _previewCanvas;
   bool isFillter = true;
 
   @override
   void initState() {
     super.initState();
-
-    // ZegoEffectsPlugin.instance.initEnv(Size(widget.screenWidthPx.toDouble(), widget.screenHeightPx.toDouble()));
-
-    /**
-     * initEnv api， need be called in render thread.
-     */
-    // ZegoEffectsPlugin.instance.initEnv(Size(720, 1280));
 
     useBasicBeauty();
     useBodyShapeBeauty();
@@ -39,9 +32,12 @@ class _EffectsPreviewPageState extends State<EffectsPreviewPage> {
     useMakeUp();
     useStyleMakeup();
 
-
+    // use Effects's custom capture
     ZegoEffectsPlugin.instance.startWithCustomCaptureSource(true);
-    ZegoCustomVideoCaptureConfig captureConfig = ZegoCustomVideoCaptureConfig(ZegoVideoBufferType.GLTexture2D);
+
+    // enable ExpressEngine's custom capture
+    ZegoCustomVideoCaptureConfig captureConfig =
+        ZegoCustomVideoCaptureConfig(ZegoVideoBufferType.GLTexture2D);
     if (Platform.isIOS) {
       captureConfig =
           ZegoCustomVideoCaptureConfig(ZegoVideoBufferType.CVPixelBuffer);
@@ -52,13 +48,19 @@ class _EffectsPreviewPageState extends State<EffectsPreviewPage> {
     ZegoExpressEngine.instance
         .enableCustomVideoCapture(true, config: captureConfig);
 
+    // must be call after ZegoExpressEngine.createEngine success!
     ZegoExpressEngine.instance.createCanvasView((viewID) {
       _previewId = viewID;
+      print('createCanvasView viewId: $viewID');
       startPreview(_previewId);
     }).then((widget) {
+      print('createCanvasView widget: $widget');
       setState(() {
         _previewViewWidget = widget!;
       });
+    }).catchError((err) {
+      // print error
+      print('createCanvasView Error: $err');
     });
 
     // if (Platform.isAndroid) {
@@ -81,11 +83,9 @@ class _EffectsPreviewPageState extends State<EffectsPreviewPage> {
     //     });
     //   });
     // }
-
   }
 
   void useBasicBeauty() {
-
     // Enable the skin tone enhancement feature.
     ZegoEffectsPlugin.instance.enableWhiten(true);
     // Set the whitening intensity. The value range is [0, 100], and the default value is 50.
@@ -99,7 +99,6 @@ class _EffectsPreviewPageState extends State<EffectsPreviewPage> {
     ZegoEffectsSmoothParam smoothParam = new ZegoEffectsSmoothParam();
     smoothParam.intensity = 100;
     ZegoEffectsPlugin.instance.setSmoothParam(smoothParam);
-
 
     // Enable the cheek blusher feature
     ZegoEffectsPlugin.instance.enableRosy(true);
@@ -129,12 +128,11 @@ class _EffectsPreviewPageState extends State<EffectsPreviewPage> {
     ZegoEffectsDarkCirclesRemovingParam darkCirclesRemovingParam =
         new ZegoEffectsDarkCirclesRemovingParam();
     darkCirclesRemovingParam.intensity = 100;
-    ZegoEffectsPlugin.instance.setDarkCirclesRemovingParam(darkCirclesRemovingParam);
-
+    ZegoEffectsPlugin.instance
+        .setDarkCirclesRemovingParam(darkCirclesRemovingParam);
   }
 
   void useBodyShapeBeauty() {
-
     // Enable the eyes enlarging feature.
     ZegoEffectsPlugin.instance.enableBigEyes(true);
     // Set the extent of eyes enlarging. The value range is [0, 100], and the default value is 50.
@@ -145,35 +143,34 @@ class _EffectsPreviewPageState extends State<EffectsPreviewPage> {
     // Enable the face slimming feature.
     ZegoEffectsPlugin.instance.enableFaceLifting(true);
     // Set the extent of face slimming. The value range is [0, 100], and the default value is 50.
-    ZegoEffectsFaceLiftingParam faceLiftingParam = new ZegoEffectsFaceLiftingParam();
+    ZegoEffectsFaceLiftingParam faceLiftingParam =
+        new ZegoEffectsFaceLiftingParam();
     faceLiftingParam.intensity = 40;
     ZegoEffectsPlugin.instance.setFaceLiftingParam(faceLiftingParam);
-
 
     // Enable the eyes brightening feature.
     ZegoEffectsPlugin.instance.enableEyesBrightening(true);
     // Set the extent of eyes brightening. The value range is [0, 100], and the default value is 50.
-    ZegoEffectsEyesBrighteningParam eyesBrighteningParam = new ZegoEffectsEyesBrighteningParam();
+    ZegoEffectsEyesBrighteningParam eyesBrighteningParam =
+        new ZegoEffectsEyesBrighteningParam();
     eyesBrighteningParam.intensity = 100;
     ZegoEffectsPlugin.instance.setEyesBrighteningParam(eyesBrighteningParam);
-
 
     // Enable the nose slimming feature.
     ZegoEffectsPlugin.instance.enableNoseNarrowing(true);
     // Set the extent of nose slimming, The value range is [0, 100], and the default value is 50.
-    ZegoEffectsNoseNarrowingParam noseNarrowingParam = new ZegoEffectsNoseNarrowingParam();
+    ZegoEffectsNoseNarrowingParam noseNarrowingParam =
+        new ZegoEffectsNoseNarrowingParam();
     noseNarrowingParam.intensity = 100;
     ZegoEffectsPlugin.instance.setNoseNarrowingParam(noseNarrowingParam);
-
-
 
     // Enable the teeth whitening feature.
     ZegoEffectsPlugin.instance.enableTeethWhitening(true);
     // Set extent of teeth whitening. The value range is [0, 100], and the default value is 50.
-    ZegoEffectsTeethWhiteningParam teethWhiteningParam = new ZegoEffectsTeethWhiteningParam();
+    ZegoEffectsTeethWhiteningParam teethWhiteningParam =
+        new ZegoEffectsTeethWhiteningParam();
     teethWhiteningParam.intensity = 100;
     ZegoEffectsPlugin.instance.setTeethWhiteningParam(teethWhiteningParam);
-
 
     // Enable the chin slimming feature.
     ZegoEffectsPlugin.instance.enableLongChin(true);
@@ -182,57 +179,58 @@ class _EffectsPreviewPageState extends State<EffectsPreviewPage> {
     longChinParam.intensity = 100;
     ZegoEffectsPlugin.instance.setLongChinParam(longChinParam);
 
-
     // Enable the small mouth feature.
     ZegoEffectsPlugin.instance.enableSmallMouth(true);
     // Set the extent of small mouth. The value range is [0, 100], and the default value is 50.
-    ZegoEffectsSmallMouthParam smallMouthParam = new ZegoEffectsSmallMouthParam();
+    ZegoEffectsSmallMouthParam smallMouthParam =
+        new ZegoEffectsSmallMouthParam();
     smallMouthParam.intensity = 100;
     ZegoEffectsPlugin.instance.setSmallMouthParam(smallMouthParam);
-
 
     // Enable the forehead shortening feature.
     ZegoEffectsPlugin.instance.enableForeheadShortening(true);
     // Set the intensity, the value range is [-100, 100], and the default value is 50.
-    ZegoEffectsForeheadShorteningParam foreheadShorteningParam = new ZegoEffectsForeheadShorteningParam();
+    ZegoEffectsForeheadShorteningParam foreheadShorteningParam =
+        new ZegoEffectsForeheadShorteningParam();
     foreheadShorteningParam.intensity = 100;
-    ZegoEffectsPlugin.instance.setForeheadShorteningParam(foreheadShorteningParam);
-
+    ZegoEffectsPlugin.instance
+        .setForeheadShorteningParam(foreheadShorteningParam);
 
     // enable the mandible slimming feature.
     ZegoEffectsPlugin.instance.enableMandibleSlimming(true);
     // Set the intensity, the value range is [0, 100], and the default value is 50.
-    ZegoEffectsMandibleSlimmingParam mandibleSlimmingParam = new ZegoEffectsMandibleSlimmingParam();
+    ZegoEffectsMandibleSlimmingParam mandibleSlimmingParam =
+        new ZegoEffectsMandibleSlimmingParam();
     mandibleSlimmingParam.intensity = 100;
     ZegoEffectsPlugin.instance.setMandibleSlimmingParam(mandibleSlimmingParam);
-
 
     // Enable the cheekbone sliming feature.
     ZegoEffectsPlugin.instance.enableCheekboneSlimming(true);
     // Set the intensity, the value range is [0, 100], and the default value is 50.
-    ZegoEffectsCheekboneSlimmingParam cheekboneSlimmingParam = new ZegoEffectsCheekboneSlimmingParam();
+    ZegoEffectsCheekboneSlimmingParam cheekboneSlimmingParam =
+        new ZegoEffectsCheekboneSlimmingParam();
     cheekboneSlimmingParam.intensity = 100;
-    ZegoEffectsPlugin.instance.setCheekboneSlimmingParam(cheekboneSlimmingParam);
-
+    ZegoEffectsPlugin.instance
+        .setCheekboneSlimmingParam(cheekboneSlimmingParam);
 
     // Enable the face shortening feature.
     ZegoEffectsPlugin.instance.enableFaceShortening(true);
     // Set the intensity, the value range is [0, 100], and the default value is 50.
-    ZegoEffectsFaceShorteningParam faceShorteningParam = new ZegoEffectsFaceShorteningParam();
+    ZegoEffectsFaceShorteningParam faceShorteningParam =
+        new ZegoEffectsFaceShorteningParam();
     faceShorteningParam.intensity = 100;
     ZegoEffectsPlugin.instance.setFaceShorteningParam(faceShorteningParam);
-
 
     // Enable the nose lengthening feature.
     ZegoEffectsPlugin.instance.enableNoseLengthening(true);
     // Set the intensity, the value range is [-100, 100], and the default value is 50.
-    ZegoEffectsNoseLengtheningParam noseLengtheningParam = new ZegoEffectsNoseLengtheningParam();
+    ZegoEffectsNoseLengtheningParam noseLengtheningParam =
+        new ZegoEffectsNoseLengtheningParam();
     noseLengtheningParam.intensity = 100;
     ZegoEffectsPlugin.instance.setNoseLengtheningParam(noseLengtheningParam);
   }
 
   void useMakeUp() {
-
     // enable eyeliner feature and set eyeliner name
     //eyelinerdir_natural、eyelinerdir_pretty、eyelinerdir_scheming、eyelinerdir_temperament、eyelinerdir_wildcat
     ZegoEffectsPlugin.instance.setEyeliner("eyelinerdir_wildcat");
@@ -275,15 +273,16 @@ class _EffectsPreviewPageState extends State<EffectsPreviewPage> {
 
     // enable cosmetic contact lenses feature and set cosmetic contact lenses name
     //coloredcontactsdir_chocolate_brown、coloredcontactsdir_darknight_black、coloredcontactsdir_mystery_brown_green、coloredcontactsdir_polar_lights_brown、coloredcontactsdir_starry_blue
-    ZegoEffectsPlugin.instance.setColoredcontacts("coloredcontactsdir_starry_blue");
+    ZegoEffectsPlugin.instance
+        .setColoredcontacts("coloredcontactsdir_starry_blue");
     // Set the intensity, the value range is [0, 100]
-    ZegoEffectsColoredcontactsParam coloredcontactsParam = new ZegoEffectsColoredcontactsParam();
+    ZegoEffectsColoredcontactsParam coloredcontactsParam =
+        new ZegoEffectsColoredcontactsParam();
     coloredcontactsParam.intensity = 100;
     ZegoEffectsPlugin.instance.setColoredcontactsParam(coloredcontactsParam);
-
   }
 
-  void useStyleMakeup(){
+  void useStyleMakeup() {
     // Enable style makeup, which cannot be used in combination with the basic makeup function above.
     //makeupdir_cutie_and_cool、makeupdir_flawless、makeupdir_milky_eyes、makeupdir_pure_and_sexy、makeupdir_vulnerable_and_innocenteyes
     ZegoEffectsPlugin.instance.setMakeup("makeupdir_cutie_and_cool");
@@ -293,15 +292,13 @@ class _EffectsPreviewPageState extends State<EffectsPreviewPage> {
     ZegoEffectsPlugin.instance.setMakeupParam(makeupParam);
   }
 
-
-  void useFilter(){
+  void useFilter() {
     //Autumn、Brighten、Cool、Cozily、Creamy、Film-like、Fresh、Night、Sunset、Sweet
     ZegoEffectsPlugin.instance.setFilter("Brighten");
     ZegoEffectsFilterParam filterParam = ZegoEffectsFilterParam();
     filterParam.intensity = 100;
     ZegoEffectsPlugin.instance.setFilterParam(filterParam);
   }
-
 
   void startPreview(int viewID) {
     _previewCanvas = ZegoCanvas.view(viewID);
@@ -320,8 +317,6 @@ class _EffectsPreviewPageState extends State<EffectsPreviewPage> {
     super.dispose();
 
     ZegoEffectsPlugin.instance.stopEffects();
-    ZegoEffectsPlugin.instance.uninitEnv();
-    ZegoEffectsPlugin.instance.destroy();
 
     ZegoExpressEngine.instance.stopPreview();
     ZegoExpressEngine.instance.destroyCanvasView(_previewId);
@@ -353,24 +348,29 @@ class _EffectsPreviewPageState extends State<EffectsPreviewPage> {
                       isFillter = val;
                     });
                     print('isFillter = $isFillter');
-                    // ZegoEffectsPlugin.instance.enableWhiten(isFillter);
-                    // ZegoEffectsPlugin.instance.enableSmooth(isFillter);
-                    // ZegoEffectsPlugin.instance.enableRosy(isFillter);
-                    // ZegoEffectsPlugin.instance.enableSharpen(isFillter);
-                    // ZegoEffectsPlugin.instance.enableWrinklesRemoving(isFillter);
-                    // ZegoEffectsPlugin.instance.enableDarkCirclesRemoving(isFillter);
-                    // ZegoEffectsPlugin.instance.enableBigEyes(isFillter);
-                    // ZegoEffectsPlugin.instance.enableFaceLifting(isFillter);
-                    // ZegoEffectsPlugin.instance.enableEyesBrightening(isFillter);
-                    // ZegoEffectsPlugin.instance.enableNoseNarrowing(isFillter);
-                    // ZegoEffectsPlugin.instance.enableTeethWhitening(isFillter);
-                    // ZegoEffectsPlugin.instance.enableLongChin(isFillter);
-                    // ZegoEffectsPlugin.instance.enableSmallMouth(isFillter);
-                    // ZegoEffectsPlugin.instance.enableForeheadShortening(isFillter);
-                    // ZegoEffectsPlugin.instance.enableMandibleSlimming(isFillter);
-                    // ZegoEffectsPlugin.instance.enableCheekboneSlimming(isFillter);
-                    // ZegoEffectsPlugin.instance.enableFaceShortening(isFillter);
-                    // ZegoEffectsPlugin.instance.enableNoseLengthening(isFillter);
+                    ZegoEffectsPlugin.instance.enableWhiten(isFillter);
+                    ZegoEffectsPlugin.instance.enableSmooth(isFillter);
+                    ZegoEffectsPlugin.instance.enableRosy(isFillter);
+                    ZegoEffectsPlugin.instance.enableSharpen(isFillter);
+                    ZegoEffectsPlugin.instance
+                        .enableWrinklesRemoving(isFillter);
+                    ZegoEffectsPlugin.instance
+                        .enableDarkCirclesRemoving(isFillter);
+                    ZegoEffectsPlugin.instance.enableBigEyes(isFillter);
+                    ZegoEffectsPlugin.instance.enableFaceLifting(isFillter);
+                    ZegoEffectsPlugin.instance.enableEyesBrightening(isFillter);
+                    ZegoEffectsPlugin.instance.enableNoseNarrowing(isFillter);
+                    ZegoEffectsPlugin.instance.enableTeethWhitening(isFillter);
+                    ZegoEffectsPlugin.instance.enableLongChin(isFillter);
+                    ZegoEffectsPlugin.instance.enableSmallMouth(isFillter);
+                    ZegoEffectsPlugin.instance
+                        .enableForeheadShortening(isFillter);
+                    ZegoEffectsPlugin.instance
+                        .enableMandibleSlimming(isFillter);
+                    ZegoEffectsPlugin.instance
+                        .enableCheekboneSlimming(isFillter);
+                    ZegoEffectsPlugin.instance.enableFaceShortening(isFillter);
+                    ZegoEffectsPlugin.instance.enableNoseLengthening(isFillter);
                     // ZegoEffectsPlugin.instance.setEyeliner(null);
                     // ZegoEffectsPlugin.instance.setEyeshadow(null);
                     // ZegoEffectsPlugin.instance.setEyelashes(null);
@@ -378,7 +378,12 @@ class _EffectsPreviewPageState extends State<EffectsPreviewPage> {
                     // ZegoEffectsPlugin.instance.setLipstick(null);
                     // ZegoEffectsPlugin.instance.setColoredcontacts(null);
                     //ZegoEffectsPlugin.instance.setFilter(null);
-                    ZegoEffectsPlugin.instance.setMakeup("");
+                    if (isFillter) {
+                      ZegoEffectsPlugin.instance
+                          .setMakeup("makeupdir_cutie_and_cool");
+                    } else {
+                      ZegoEffectsPlugin.instance.setMakeup("");
+                    }
                   })),
         ],
       ),

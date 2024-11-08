@@ -108,7 +108,7 @@ class _EffectsInitPageState extends State<EffectsInitPage> {
       height: 60.0,
       child: CupertinoButton(
         child: Text(
-          'Get License',
+          '1. Get License',
           style: TextStyle(color: Colors.white),
         ),
         onPressed: _isGetLicenseButtonDisabled
@@ -150,12 +150,18 @@ class _EffectsInitPageState extends State<EffectsInitPage> {
       height: 60.0,
       child: CupertinoButton(
         child: Text(
-          'Create Engine',
+          '2. Create Effects',
           style: TextStyle(color: Colors.white),
         ),
         onPressed: onCreateEngineButtonPressed,
       ),
     );
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    ZegoEffectsPlugin.instance.destroy();
   }
 
   Widget licenseWidget() {

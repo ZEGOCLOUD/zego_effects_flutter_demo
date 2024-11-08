@@ -12,8 +12,8 @@ class ZegoConfig {
   // ----- Persistence params -----
 
   //Please set your appid and appsign before running the project
-  int appID = 0;
-  String appSign = "";
+  int appID = __PLACE_HOLDER__;
+  String appSign = __PLACE_HOLDER__;
   bool isTestEnv = false;
   int scenario = 1;
 
